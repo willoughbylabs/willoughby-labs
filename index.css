@@ -1,0 +1,42 @@
+html body {
+  background-color: #65B598;
+}
+
+#title h1 {
+  font-family: 'Fascinate', cursive;
+  color: #1a0e2a;
+  text-transform: uppercase;
+  font-size: 4em;
+  text-align: center;
+  padding-top: 15%;
+}
+
+#title h2 {
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: #1a0e2a;
+  text-align: center;
+}
+
+hr {
+  border-color: #964147;
+  width: 600px;
+  border-width: 2px;
+}
+
+.navbar-default {
+  background-color: #FFD13D;
+  border: 0;
+}
+
+.navbar-default .navbar-brand {
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: #1a0b2f;
+}
+
+.fa-lightbulb {
+  color: #964147;
+}
+
+h1 .fa-lightbulb {
+  color: #FFD13D;
+}
