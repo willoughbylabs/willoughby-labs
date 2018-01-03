@@ -4,23 +4,60 @@ html body {
 }
 
 .container {
-  text-align: center;
+  height: 100%;
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto;
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
   grid-gap: 3px;
+  text-align: center;
 }
 
-#title h1 {
+.title {
+  grid-column: 1 / -1;
+}
+
+.blog {
+
+}
+
+.projects {
+
+}
+
+.links {
+
+}
+
+.about {
+
+}
+
+.footer {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+h1 {
   font-family: 'Fascinate', cursive;
   color: #1a0e2a;
   text-transform: uppercase;
   text-decoration: underline;
   font-size: 4em;
   text-align: center;
-  padding-top: 15%;
 }
 
 h1 .fa-lightbulb {
+  color: #FFD13D;
+}
+
+.nav-links {
+  text-transform: uppercase;
+  color: #1a0e2a;
+}
+
+.nav-links:link {
+  text-decoration: none;
+}
+
+.nav-links:hover {
   color: #FFD13D;
 }
