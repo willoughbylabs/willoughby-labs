@@ -13,7 +13,7 @@ body {
 .container {
   height: 100%;
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  grid-template: repeat(1, 2fr) / repeat(4, 1fr);
   grid-gap: 3px;
   text-align: center;
 }
@@ -57,13 +57,10 @@ h1 .fa-lightbulb {
   color: #65B598;
 }
 
-p {
-  color: #FFD13D;
-}
-
 .nav-links {
   text-transform: uppercase;
   color: #65B598;
+
 }
 
 .nav-links:link {
@@ -72,4 +69,13 @@ p {
 
 .nav-links:hover {
   color: #FFD13D;
+}
+
+.fa-twitter, .fa-at, .fa-github, .fa-linkedin, .fa-lastfm, .fa-soundcloud {
+  color: #FFD13D;
+  font-size: 1.5em;
+}
+
+.fa-twitter:hover, .fa-at:hover, .fa-github:hover, .fa-linkedin:hover, .fa-lastfm:hover, .fa-soundcloud:hover {
+  color: #ee4266;
 }
