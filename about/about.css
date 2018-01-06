@@ -1,0 +1,73 @@
+html {
+  background: url(../images/bulb-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.nav {
+  margin: 5%;
+}
+
+.title {
+  grid-column: 1 / -1;
+}
+
+.title a:link {
+  text-decoration: none;
+}
+
+.title h1:hover {
+  color: #65B598;
+}
+
+.content {
+  color: #FFD13D;
+  margin: 5%;
+}
+
+.content a {
+  color: #65B598;
+  text-decoration: none;
+}
+
+.footer {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #FFD13D;
+}
+
+h1 {
+  font-family: 'Fascinate', cursive;
+  color: #FFD13D;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 4em;
+  text-align: center;
+}
+
+h1 .fa-lightbulb {
+  color: #65B598;
+}
+
+p {
+  color: #FFD13D;
+}
+
+.nav-links {
+  text-transform: uppercase;
+  color: #65B598;
+}
+
+.nav-links:link {
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  color: #FFD13D;
+}
