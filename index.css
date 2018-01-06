@@ -22,20 +22,12 @@ body {
   grid-column: 1 / -1;
 }
 
-.blog {
-
+.title a:link {
+  text-decoration: none;
 }
 
-.projects {
-
-}
-
-.links {
-
-}
-
-.about {
-
+.title h1:hover {
+  color: #65B598;
 }
 
 .footer {
