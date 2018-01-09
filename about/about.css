@@ -1,20 +1,55 @@
-html {
+body {
   background: url(../images/bulb-background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 
-body {
-    font-family: 'Quattrocento Sans', sans-serif;
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 160px 470px 40px;
+  /* grid-template: repeat(3, 1fr) / repeat(4, 1fr); */
+}
+
+.title {
+  grid-column: 1 / -1;
 }
 
 .nav {
   margin: 5%;
 }
 
-.title {
+.nav-links {
+  text-transform: uppercase;
+  color: #65B598;
+}
+
+.nav-links:link {
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  color: #FFD13D;
+}
+
+.left-content {
+
+}
+
+.lightbulb-column {
+
+}
+
+.right-content {
+
+}
+
+.footer {
   grid-column: 1 / -1;
 }
 
@@ -31,17 +66,6 @@ body {
   margin: 5%;
 }
 
-.content a {
-  color: #65B598;
-  text-decoration: none;
-}
-
-.footer {
-  grid-column: 1 / -1;
-  text-align: center;
-  color: #FFD13D;
-}
-
 h1 {
   font-family: 'Fascinate', cursive;
   color: #FFD13D;
@@ -53,21 +77,4 @@ h1 {
 
 h1 .fa-lightbulb {
   color: #65B598;
-}
-
-p {
-  color: #FFD13D;
-}
-
-.nav-links {
-  text-transform: uppercase;
-  color: #65B598;
-}
-
-.nav-links:link {
-  text-decoration: none;
-}
-
-.nav-links:hover {
-  color: #FFD13D;
 }
