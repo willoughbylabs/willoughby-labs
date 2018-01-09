@@ -13,6 +13,7 @@ body {
   grid-gap: 1px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 160px 470px 40px;
+
   /* grid-template: repeat(3, 1fr) / repeat(4, 1fr); */
 }
 
@@ -25,6 +26,7 @@ body {
 }
 
 .nav-links {
+  font-size: 1.1em;
   text-transform: uppercase;
   color: #65B598;
 }
@@ -51,6 +53,17 @@ body {
 
 .footer {
   grid-column: 1 / -1;
+  text-align: center;
+  color: #65B598;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #FFD13D;
+}
+
+.footer a:hover {
+  color: #ee4266;
 }
 
 .title a:link {
@@ -58,7 +71,7 @@ body {
 }
 
 .title h1:hover {
-  color: #65B598;
+  color: #ee4266;
 }
 
 .content {
