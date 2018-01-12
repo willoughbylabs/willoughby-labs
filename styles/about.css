@@ -1,0 +1,93 @@
+body {
+  background: url(../images/bulb-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 160px 470px 40px;
+
+  /* grid-template: repeat(3, 1fr) / repeat(4, 1fr); */
+}
+
+.title {
+  grid-column: 1 / -1;
+}
+
+.nav {
+  margin: 5%;
+}
+
+.nav-links {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  color: #65B598;
+}
+
+.nav-links:link {
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  color: #FFD13D;
+}
+
+.left-content {
+
+}
+
+.lightbulb-column {
+
+}
+
+.right-content {
+
+}
+
+.footer {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #65B598;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #FFD13D;
+}
+
+.footer a:hover {
+  color: #ee4266;
+}
+
+.title a:link {
+  text-decoration: none;
+}
+
+.title h1:hover {
+  color: #ee4266;
+}
+
+.content {
+  color: #FFD13D;
+  margin: 5%;
+}
+
+h1 {
+  font-family: 'Fascinate', cursive;
+  color: #FFD13D;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 4em;
+  text-align: center;
+}
+
+h1 .fa-lightbulb {
+  color: #65B598;
+}
