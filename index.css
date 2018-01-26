@@ -1,0 +1,109 @@
+body {
+  background: url(images/bulb-background.jpg) no-repeat center center fixed;
+  color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+:root {
+  --yellow: #FFD13D;
+  --green: #65B598;
+  --pink: #EE4266;
+
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 160px 470px 40px;
+  grid-gap: 1px;
+  text-align: center;
+}
+
+.title {
+  grid-column: 1 / -1;
+}
+
+.blog {
+
+}
+
+.project {
+
+}
+
+.lightbulb-column {
+
+}
+
+.links {
+
+}
+
+.about {
+
+}
+
+.footer {
+  grid-column: 1 / -1;
+  color: #65B598;
+
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--yellow);
+}
+
+.footer a:hover {
+  color var(--pink);
+}
+
+.title a:link {
+  text-decoration: none;
+}
+
+.title h1:hover {
+  color: var(--pink);
+}
+
+h1 {
+  font-family: 'Fascinate', cursive;
+  color: var(--yellow);
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 4em;
+  text-align: center;
+}
+
+h1 .fa-lightbulb {
+  color: var(--green);
+}
+
+.nav-links {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  color: var(--green);
+
+}
+
+.nav-links:link {
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  color: var(--yellow);
+}
+
+.fa-twitter, .fa-at, .fa-github, .fa-linkedin, .fa-lastfm, .fa-soundcloud {
+  color: var(--yellow);
+  font-size: 1.5em;
+}
+
+.fa-twitter:hover, .fa-at:hover, .fa-github:hover, .fa-linkedin:hover, .fa-lastfm:hover, .fa-soundcloud:hover {
+  color: var(--pink);
+}
