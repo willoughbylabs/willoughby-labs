@@ -1,0 +1,72 @@
+:root {
+  --yellow: #FFD13D;
+  --green: #65B598;
+  --pink: #EE4266;
+
+}
+
+body {
+  background: url(images/bulb-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  text-align: center;
+}
+
+.nav {
+ 
+}
+
+.title {
+  text-align: center;
+}
+
+.footer {
+  color: #65B598;
+
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--yellow);
+}
+
+.footer a:hover {
+  color var(--pink);
+}
+
+.title a:link {
+  text-decoration: none;
+}
+
+.title h1:hover {
+  color: var(--pink);
+}
+
+h1 {
+  font-family: 'Fascinate', cursive;
+  color: var(--yellow);
+  text-transform: uppercase;
+  font-size: 4em;
+  text-align: center;
+}
+
+h1 .fa-lightbulb {
+  color: var(--green);
+}
+
+.fa-twitter, .fa-at, .fa-github, .fa-linkedin, .fa-lastfm, .fa-soundcloud {
+  color: var(--yellow);
+  font-size: 1.5em;
+}
+
+.fa-twitter:hover, .fa-at:hover, .fa-github:hover, .fa-linkedin:hover, .fa-lastfm:hover, .fa-soundcloud:hover {
+  color: var(--pink);
+}
