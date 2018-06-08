@@ -1,7 +1,7 @@
 :root {
   --yellow: #FFD13D;
   --green: #65B598;
-  --pink: #EE4266;
+  --orange: #d84c36;
   --header-bkg-bwn: #291711;
   --header-bkg-blue: #011936;
 
@@ -18,7 +18,7 @@ body {
 
 .nav {
   background-color: var(--header-bkg-bwn);
-  padding: .2em 0 .1em .2em;
+  padding: .5em 0 .2em .5em;
 }
 
 .nav ul {
@@ -28,28 +28,33 @@ body {
   width: 100%;
 }
 
+.nav-link {
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--orange);
+  font-size: 1.5em;
+  display: inline;
+  padding: 0 2em 0 0;
+}
+
+.nav-link a:visited {
+  color: var(--orange);
+}
+
 .nav li:first-child { 
   font-family: 'Josefin Sans', sans-serif;
-  color: var(--green);
-  font-size: 2.75em;
+  color: var(--yellow);
+  font-size: 2.5em;
   text-transform: uppercase;
   text-align: left;
   margin: 0;
 }
 
-.nav-link {
-  font-family: 'Josefin Sans', sans-serif;
-  color: var(--green);
-  font-size: 1.5em;
-  display: inline;
-}
-
-.nav a:visited {
-  color: var(--green);
+.nav li:first-child a:visited {
+  color: var(--yellow);
 }
 
 .fa-lightbulb {
-  color: var(--yellow);
+  color: var(--green);
 }
 
 a:link {
