@@ -1,0 +1,95 @@
+:root {
+  --blue: #28308C;
+  --yellow: #FFD13D;
+  --green: #14AA5D;
+  --raisin: #2E1F27;
+  --pink: #E44F59;
+}
+
+img, embed, object, video { 
+max-width: 100%; 
+} 
+
+html, body, main { 
+width: 100%; 
+height: 100%; 
+margin: 0;
+font-size: 16px;
+} 
+
+.header {
+  width: 100%;
+  height: 105px;
+  background-color: var(--blue);
+}
+
+.header-logo {
+ height: 90px;
+ width: 90px;
+  float: left;
+  padding-top: 5px;
+}
+
+.header-title {
+  font-size: 2rem;
+  margin: 0;
+  padding: .75em 3em .20em;
+}
+
+.header-title a {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--yellow);
+}
+
+.header-title a:hover {
+  color: var(--green);
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0px;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav a {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  text-transform:  uppercase;
+  color: var(--green);
+  padding: .5rem 3rem 0 .5em;
+}
+
+.nav a:hover {
+  color: var(--yellow);
+}
+
+.tagline {
+  margin: 0;
+  font-weight: 900;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  padding: 2em auto;
+  text-align: center;
+  background-color: var(--raisin);
+}
+
+.section {
+  width: 100%;   
+}
+
+@media screen and (max-width: 500px) {
+  .header-logo {
+ height: 75px;
+ width: 75px;
+  }
+  
+  .header-title {
+    font-size: 1.2rem;
+    padding: 2rem 0 0 0;
+  }
+}
