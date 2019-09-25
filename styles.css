@@ -1,0 +1,134 @@
+:root {
+    --cobalt: #28308C; 
+    --golden: #FFD13D;
+    --green: #14AA5D;
+    --raisin: #2E1F27;
+    --salmon: #E44F59;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: var(--cobalt);
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    border: 2px solid green;
+    background-color: var(--cobalt);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+}
+
+li {
+    border: 2px solid green;
+}
+
+/* Layout */
+
+.container {
+    width: 100%;
+    max-width: 475px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+header {
+    background-color: var(--cobalt);
+    text-align: center;
+}
+
+header img {
+    margin: 7em 0 2em;
+    max-width: 45%;
+    height: auto;
+}
+
+footer {
+    background-color: var(--salmon);
+    width: 100%;
+    max-width: 475px;
+    margin: 0 auto;
+}
+
+/* Typography */
+
+nav a{
+    font-family: "Raleway" , sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+nav a:hover {
+    color: var(--salmon);
+}
+
+h2, h3 {
+    font-family: "Cabin", sans-serif;
+    font-weight: 500;
+    color: var(--cobalt);
+    text-align: center;
+}
+
+.em {
+    font-style: italic;
+}
+
+.slogan p{
+    color: white;
+    font-family: "Cabin", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.04em;
+}
+
+main {
+    font-size: 1rem;
+    line-height: 1.5em;
+    letter-spacing: .02em;
+}
+
+.about-me p span {
+    font-weight: 600;
+}
+
+.motto ul li {
+    display: block;
+    font-style: italic;
+}
+
+.motto ul li:first-letter {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+small {
+    color: var(--raisin);
+    font-size: 0.75rem;
+    font-style: italic;   
+}
+
+.dabbles, .dabbles h2 {
+    color: white;
+}
+

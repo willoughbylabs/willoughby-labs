@@ -5,85 +5,94 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:500|Raleway:400,400i,600,600i&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   </head>
 
   <body>
+    <a id="top"></a>
     <header> 
-      <div>
-        <img src="images/Logo - Transparent.png" alt="Yellow and green honeycomb logo.">
-      </div>
-      <div>
-      <span>Think.</span>
-      <span>Learn.</span>
-      <span>Do.</span>
-    </div>
+      <div class="container">
+        <div class="header-logo">
+          <img src="images/Logo - Transparent.png" alt="Yellow and green honeycomb logo.">
+        </div> <!-- end #header-img -->
+        <div class="slogan">
+          <p><span>Think.</span></p>
+          <p><span>Learn.</span></p>
+          <p><span>Do.</span></p>
+        </div> <!-- end #slogan -->
+      </div> <!-- end #container -->
+      <nav>
+          <div class="container">
+            <ul>
+              <li><a href="#top">Home</a></li>
+              <li><a href="#">Bio</a></li>
+              <li><a href="#">Dabble</a></li>
+            </ul>
+          </div> <!-- end #container -->
+        </nav> 
     </header>
 
-    <nav>
-          <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Bio</a></li>
-          <li><a href="#">Dabble</a></li>
-        </ul>
-    </nav> 
-
     <main>
-      <div>
-        <section>
-          <div>
-              <img src="images/portrait_honeycomb_web.png" alt="Profile picture of site creator.">
-          </div>
-          <div>
-              <h2>About Me</h2>
-              <p><span>My name is <span>Andrew</span> but my friends call me <span>Willoughby</span>. Welcome to my workshop!</span></p>
-              <p>
-              Raised in an Air Force family, Chicago is my 10th place to call home. My passion for learning is driven by the belief that anything is possible with practice. I aspire to inspire. My interests are expansive: from architecture, politics, and astronomy to video games, photography, music, and cycling, my fascination has no bounds.
-              </p>
-          </div>
-        </section>
-      </div> 
-      <div>
-        <section>
-          <div>
-            <h4>My Motto</h4>
-            <ul>
-              <li><span>A</span>sk questions</li>
-              <li><span>N</span>avigate challenges</li>
-              <li><span>D</span>efy expectations</li>
-              <li><span>R</span>edefine “possible”</li>
-              <li><span>E</span>arn responsibility</li>
-              <li><span>W</span>ield integrity</li>
-            </ul>
-          </div>
-        </section>
-      </div>
-      <div>
-        <section>
-          <div>
-            <p>Peruse the lab and learn more by visiting my <a href="#">bio</a>, article generator <a href="https://blog.willoughbylabs.com/" target="_blank" rel="noopener noreferrer">(blog)</a>, <a href="http://twitter.com/willowbeehive" target="_blank" rel="noopener noreferrer">social media</a>, or other <a href="#bottom">online dabbles</a>.
+      <section class="bio">
+        <div class="container">
+        <div class="profile-img">
+          <img src="images/portrait_honeycomb_web.png" alt="Profile picture of site creator.">
+        </div> <!-- end #profile-img -->
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>My name is <span class="em">Andrew</span> but my friends call me <span class="em">Willoughby</span>. Welcome to my workshop!</p>
+            <p>
+            Raised in an Air Force family, Chicago is my 10th place to call home. My passion for learning is driven by the belief that anything is possible with practice. <span class="em">I aspire to inspire</span>. My interests are expansive: from architecture, politics, and astronomy to video games, photography, music, and cycling, my fascination has no bounds.
             </p>
-          </div>
-        </section>
-      </div>
-    </main>
+        </div> <!-- end #about-me -->
+        </div> <!-- end #container -->
+      </section>
+
+      <section class="motto">
+        <div class="container">
+          <h3>Acrostic Motto</h4>
+          <ul>
+            <li>Ask questions</li>
+            <li>Navigate challenges</li>
+            <li>Defy expectations</li>
+            <li>Redefine “possible”</li>
+            <li>Earn responsibility</li>
+            <li>Wield integrity</li>
+          </ul>
+        </div> <!-- end #container -->
+      </section>
+
+      <section class="explore">
+        <div class="container">
+          <h3>Explore</h4>
+          <p>Peruse the lab and learn more by visiting my <a href="#">bio</a>, article generator <a href="https://blog.willoughbylabs.com/" target="_blank" rel="noopener noreferrer">(blog)</a>, <a href="http://twitter.com/willowbeehive" target="_blank" rel="noopener noreferrer">social media</a>, or other <a href="#bottom">online dabbles</a>.
+          </p>
+        </div> <!-- end #container -->
+      </section>
+    </main>    
     
     <footer>
-      <div>
-          <a href="https://openhousechicago.org" target="_blank" rel="noopener noreferrer">
-            <img src="images/tribune.jpg" alt="View of Tribune Tower from a balcony, courtesy of Open House Chicago.">
-        </a>
-      </div>
-      <div>
-        <p>
+      <section class="teachers">
+        <div class="container">
+          <div>
+              <a href="https://openhousechicago.org" target="_blank" rel="noopener noreferrer">
+                <img src="images/tribune.jpg" alt="View of Tribune Tower from a balcony, courtesy of Open House Chicago.">
+            </a>
+          </div>
+        </div> <!-- end #container -->
+        <div class="container">
+          <p>
             <small>This site is brought to you by the teacher in everyone. Everything I know is from someone taking time to share their knowledge.</small>
-          </p>
-      </div>
-      <div>
-        <section>
+            </p>
+      </div><!-- end #container -->
+
+      </section>
+      <section class="dabbles">
+        <div class="container">   
           <h2>Online Dabbles</h2>
           <aside>
-            <p>Open in new window.</p>
+            <p><span class="em">Open in new window.</span></p>
           </aside>
           <ul>
             <li><a href="https://www.linkedin.com/in/willoughbylabs" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
@@ -96,8 +105,8 @@
             <li><a href="https://www.last.fm/user/willowbeehive" target="_blank" rel="noopener noreferrer">Last.fm</a></li>
             <li><a href="https://soundcloud.com/willowbeehive" target="_blank" rel="noopener noreferrer">SoundCloud</a></li>
           </ul> 
-        </section>
-      </div>
+        </div> <!-- end #container -->
+      </section>     
     </footer>
     <a id="bottom"></a>
   </body>
