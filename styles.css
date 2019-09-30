@@ -1,4 +1,23 @@
 /* Testing - outlines, etc. for observing effects. Can delete after completion. */
+#background {
+    border: 2px solid orange;
+}
+
+.container {
+    border: 2px solid green;
+}
+
+nav {
+    border: 2px solid yellow;
+}
+
+#logo-slogan {
+    border: 2px solid magenta;
+}
+
+li {
+    border: 2px solid white;
+}
 
 /* Style */
 
@@ -21,13 +40,23 @@ body {
     margin: 0;
 }
 
+#background {
+    background-color: var(--cobalt);
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Navigation */
 nav {
-    border: 2px solid green;
     background-color: var(--cobalt);
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 7vh;
 }
 
 nav ul {
@@ -37,14 +66,12 @@ nav ul {
     justify-content: space-around;
 }
 
-li {
-    border: 2px solid green;
+/* Layout */
+#logo-slogan {
+    text-align: center;
 }
 
-/* Layout */
-
-.container {
-    width: 100%;
+.wrapper {
     max-width: 475px;
     margin: 0 auto;
 }
@@ -53,20 +80,13 @@ img {
     max-width: 100%;
 }
 
+header img {
+    max-width: 45%;
+}
+
 ul {
     list-style: none;
     padding: 0;
-}
-
-header {
-    background-color: var(--cobalt);
-    text-align: center;
-}
-
-header img {
-    margin: 7em 0 2em;
-    max-width: 45%;
-    height: auto;
 }
 
 footer {
@@ -99,9 +119,10 @@ h2, h3 {
     font-style: italic;
 }
 
-.slogan p{
+#logo-slogan p{
     color: white;
     font-family: "Cabin", sans-serif;
+    margin: 1rem auto 0;
     font-size: 2rem;
     letter-spacing: 0.04em;
 }
@@ -136,3 +157,7 @@ small {
     color: white;
 }
 
+.dabbles a {
+    color: white;
+    text-decoration: none;
+}
