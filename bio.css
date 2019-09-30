@@ -53,6 +53,10 @@ header img {
     margin-top: 1.5rem;
 }
 
+footer p {
+    margin-top: rem;
+}
+
 /* 
 ++++++++++
 Navigation
@@ -75,9 +79,9 @@ nav ul {
 }
 
 /*
-    ++++++++
-    Typology
-    ++++++++
+    ++++++++++
+    Typography
+    ++++++++++
 */
 #logo-slogan p{
     color: white;
@@ -148,7 +152,7 @@ a.current-link {
 
     header img {
         max-width: 35%;
-        margin: 1rem;
+        margin: .75rem;
     }
 
     #logo-slogan p {

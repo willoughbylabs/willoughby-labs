@@ -1,5 +1,3 @@
-/* Testing area - outlines, etc. for observing effects. Can delete after completion. */
-
 /* 
     +++++
     Style
@@ -94,7 +92,8 @@ header img {
 }
 
 #about-me, #explore, #teachers p {
-    padding: 0 1rem;
+    padding: 0 2rem;
+    font-size: 1.1rem;
 }
 
 #motto ul {
@@ -213,7 +212,7 @@ main {
 
 #teachers p {
     color: var(--raisin);
-    font-size: .9rem;
+    font-size: .95rem;
     font-style: italic; 
     text-align: center;
 }
@@ -233,9 +232,9 @@ main {
 }
 
 /* 
-    +++++++++++++
-    Media Queries
-    +++++++++++++
+    +++++++++++
+    Media Query
+    +++++++++++
 */
 @media (max-width: 960px) and (orientation: landscape) {
     nav {
@@ -246,7 +245,18 @@ main {
         height: 10vh;
     }
 
+    #logo-slogan {
+        display: flex; 
+    }
+
     #logo-slogan p {
-        margin: 0;
+        padding: .5rem;
+        margin: auto auto;
+    }
+
+    header img {
+        display: inline-block;
+        height: 8rem;
+        margin: .75rem;
     }
 }
