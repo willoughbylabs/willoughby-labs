@@ -5,7 +5,6 @@
     Style
     +++++ 
 */
-
 :root {
     --cobalt: #28308C; 
     --golden: #FFD13D;
@@ -34,6 +33,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+footer {
+    background-color: var(--salmon);
+    padding-bottom: 6.5vh;
 }
 
 .separator {
@@ -65,10 +69,6 @@ nav ul {
     align-items: center;
 }
 
-.nav-links {
-
-}
-
 /* 
     ++++++
     Layout 
@@ -88,40 +88,40 @@ header img {
 }
 
 #about-me img {
-    width: 70%;
+    width: 50%;
     display: block;
     margin: 1rem auto;
-    
 }
 
-#about-me, #explore, .teachers p {
+#about-me, #explore, #teachers p {
     padding: 0 1rem;
 }
 
-.motto ul {
+#motto ul {
     list-style: none;
     padding: 0;
 }
-.links h2 {
+.dabbles h2 {
     margin-bottom: 0;
 }
 
-.links ul {
+#dabbles ul {
     padding: 0;
     list-style: none;
     text-align: center;
 }
 
-.links li {
+#dabbles li {
     display: inline-block;
     vertical-align: top;
-    padding: 1.2rem;
+    padding: 1rem;
     justify-content: space-around;
 }
 
-footer {
-    background-color: var(--salmon);
-    padding-bottom: 6.5vh;
+#dabbles a {
+    padding: .9rem;
+    text-align: center;
+    border-radius: 25%;
 }
 
 footer img {
@@ -147,10 +147,6 @@ nav a{
     font-family: "Raleway" , sans-serif;
     font-weight: 400;
     color: white;
-}
-
-nav a:hover {
-    color: var(--salmon);
 }
 
 h2, h3 {
@@ -194,28 +190,33 @@ main {
     letter-spacing: .02em;
 }
 
-.motto ul li {
+#motto ul li {
     display: block;
     font-style: italic;
 }
 
-.motto ul li:first-letter {
+#motto ul li:first-letter {
     font-size: 1.25rem;
     font-weight: 600;
 }
 
-.teachers p {
+#teachers p {
     color: var(--raisin);
     font-size: .9rem;
     font-style: italic; 
     text-align: center;
 }
 
-.links, .links h2 {
+#dabbles h2 {
     color: white;
 }
 
-.links a {
+#dabbles a {
     color: white;
     text-decoration: none;
+}
+
+#dabbles a:hover,
+#dabbles a:active {
+    background-color: var(--cobalt);
 }
