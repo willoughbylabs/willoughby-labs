@@ -1,25 +1,10 @@
 /* Testing - outlines, etc. for observing effects. Can delete after completion. */
-#background {
-    border: 2px solid orange;
-}
 
-.container {
-    border: 2px solid green;
-}
-
-nav {
-    border: 2px solid yellow;
-}
-
-#logo-slogan {
-    border: 2px solid magenta;
-}
-
-li {
-    border: 2px solid white;
-}
-
-/* Style */
+/* 
+    +++++
+    Style
+    +++++ 
+*/
 
 :root {
     --cobalt: #28308C; 
@@ -40,9 +25,10 @@ body {
     margin: 0;
 }
 
-#background {
+#header-bkg {
     background-color: var(--cobalt);
     width: 100%;
+    padding-bottom: 1rem;
     height: 93vh;
     display: flex;
     flex-direction: column;
@@ -50,7 +36,17 @@ body {
     justify-content: center;
 }
 
-/* Navigation */
+.separator {
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 5px solid var(--green);
+}
+
+/* 
+    ++++++++++
+    Navigation 
+    ++++++++++
+*/
 nav {
     background-color: var(--cobalt);
     position: fixed;
@@ -60,43 +56,92 @@ nav {
 }
 
 nav ul {
+    margin: 0;
+    height: 7vh;
     list-style: none;
     display: flex;
     padding: 0;
     justify-content: space-around;
+    align-items: center;
 }
 
-/* Layout */
-#logo-slogan {
-    text-align: center;
+.nav-links {
+
 }
 
+/* 
+    ++++++
+    Layout 
+    ++++++
+*/
 .wrapper {
     max-width: 475px;
     margin: 0 auto;
 }
 
-img {
-    max-width: 100%;
+#logo-slogan {
+    text-align: center;
 }
 
 header img {
     max-width: 45%;
 }
 
-ul {
+#about-me img {
+    width: 70%;
+    display: block;
+    margin: 1rem auto;
+    
+}
+
+#about-me, #explore, .teachers p {
+    padding: 0 1rem;
+}
+
+.motto ul {
     list-style: none;
     padding: 0;
+}
+.links h2 {
+    margin-bottom: 0;
+}
+
+.links ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.links li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1.2rem;
+    justify-content: space-around;
 }
 
 footer {
     background-color: var(--salmon);
-    width: 100%;
-    max-width: 475px;
-    margin: 0 auto;
+    padding-bottom: 6.5vh;
 }
 
-/* Typography */
+footer img {
+    width: 100%;
+}
+
+/* 
+    ++++++++++
+    Typography 
+    ++++++++++
+*/
+a {
+    text-decoration: none;
+    color: var(--green);
+}
+
+a:hover,
+a:active {
+    color: var(--salmon);
+}
 
 nav a{
     font-family: "Raleway" , sans-serif;
@@ -119,6 +164,10 @@ h2, h3 {
     font-style: italic;
 }
 
+.strong {
+    font-weight: 600;
+}
+
 #logo-slogan p{
     color: white;
     font-family: "Cabin", sans-serif;
@@ -127,14 +176,22 @@ h2, h3 {
     letter-spacing: 0.04em;
 }
 
-main {
-    font-size: 1rem;
-    line-height: 1.5em;
-    letter-spacing: .02em;
+#think:hover, 
+#think:active {
+    color: var(--salmon);
+}
+#learn:hover, 
+#learn:active {
+    color: var(--golden);
+}
+#do:hover, 
+#do:active {
+    color: var(--green);
 }
 
-.about-me p span {
-    font-weight: 600;
+main {
+    line-height: 1.5em;
+    letter-spacing: .02em;
 }
 
 .motto ul li {
@@ -147,17 +204,18 @@ main {
     font-weight: 600;
 }
 
-small {
+.teachers p {
     color: var(--raisin);
-    font-size: 0.75rem;
-    font-style: italic;   
+    font-size: .9rem;
+    font-style: italic; 
+    text-align: center;
 }
 
-.dabbles, .dabbles h2 {
+.links, .links h2 {
     color: white;
 }
 
-.dabbles a {
+.links a {
     color: white;
     text-decoration: none;
 }

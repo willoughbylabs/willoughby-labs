@@ -9,80 +9,70 @@
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <div id="background">
-        <a id="top"></a>
         <header> 
-            <div id="logo-slogan">
-                <img src="images/Logo - Transparent.png" alt="Yellow and green honeycomb logo.">
-                    <p><span>Think.</span></p>
-                    <p><span>Learn.</span></p>
-                    <p><span>Do.</span></p>
-            </div> <!-- end #logo-slogan --> 
-        </div> <!-- end #background -->
-        <nav>
-            <ul>
-                <li><a href="#top">Home</a></li>
-                <li><a href="#">Bio</a></li>
-                <li><a href="#">Dabble</a></li>
-            </ul>
-        </nav> 
+            <div id="header-bkg">
+                <a id="top"></a>
+                <div id="logo-slogan">
+                    <img src="images/Logo - Transparent.png" alt="Yellow and green honeycomb logo.">
+                    <p><span id="think">Think.</span></p>
+                    <p><span id="learn">Learn.</span></p>
+                    <p><span id="do">Do.</span></p>
+                </div> <!-- end #logo-slogan --> 
+            </div> <!-- end #header-bkg -->
+            <nav>
+                <div class="nav-links">
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#">Bio</a></li>
+                    <li><a href="#">Dabble</a></li>
+                </ul>
+                </div> <!-- end .nav-links -->
+            </nav> 
         </header>
-        <div class="wrapper">
-            <main>
-                <section class="bio">
-                    <div class="container">
-                        <div class="profile-img">
-                            <img src="images/portrait_honeycomb_web.png" alt="Profile picture of site creator.">
-                        </div> <!-- end #profile-img -->
-                        <div class="about-me">
-                            <h2>About Me</h2>
-                            <p>My name is <span class="em">Andrew</span> but my friends call me <span class="em">Willoughby</span>. Welcome to my workshop!</p>
-                            <p>
-                            Raised in an Air Force family, Chicago is my 10th place to call home. My passion for learning is driven by the belief that anything is possible with practice. <span class="em">I aspire to inspire</span>. My interests are expansive: from architecture, politics, and astronomy to video games, photography, music, and cycling, my fascination has no bounds.
-                            </p>
-                        </div> <!-- end #about-me -->
-                    </div> <!-- end .container -->
-                </section>
-                <section class="motto">
-                    <div class="container">
-                        <h3>Acrostic Motto</h4>
-                            <ul>
-                                <li>Ask questions</li>
-                                <li>Navigate challenges</li>
-                                <li>Defy expectations</li>
-                                <li>Redefine “possible”</li>
-                                <li>Earn responsibility</li>
-                                <li>Wield integrity</li>
-                            </ul>
-                    </div> <!-- end .container -->
-                </section>
-                <section class="explore">
-                    <div class="container">
-                        <h3>Explore</h4>
-                        <p>Peruse the lab and learn more by visiting my <a href="#">bio</a>, article generator <a href="https://blog.willoughbylabs.com/" target="_blank" rel="noopener noreferrer">(blog)</a>, <a href="http://twitter.com/willowbeehive" target="_blank" rel="noopener noreferrer">social media</a>, or other <a href="#bottom">online dabbles</a>.
+        <main>
+            <div class="wrapper">
+                <div id="about-me">
+                    <img src="images/portrait_honeycomb_web.png" alt="Profile picture of site creator.">
+                    <section class="bio">       
+                        <h2>About Me</h2>
+                        <div class="separator"></div>
+                        <p>My name is <span class="em strong">Andrew</span> but my friends call me <span class="em strong">Willoughby</span>. Welcome to my workshop!</p>
+                        <p>
+                        Raised in an Air Force family, Chicago is my 10th place to call home. My passion for learning is driven by the belief that anything is possible with practice. <span class="em">I aspire to inspire</span>. My interests are expansive: from architecture, politics, and astronomy to video games, photography, music, and cycling, my fascination has little bounds.
                         </p>
-                    </div> <!-- end .container -->
-                </section>
+                    </section>
+                    <section class="motto">
+                        <h3>Acrostic Motto</h3>
+                        <ul>
+                            <li>Ask questions</li>
+                            <li>Navigate challenges</li>
+                            <li>Defy expectations</li>
+                            <li>Redefine “possible”</li>
+                            <li>Earn responsibility</li>
+                            <li>Wield integrity</li>
+                        </ul>
+                    </section>
+                </div> <!-- end #about-me -->
+                <div id="explore">
+                <h2>Explore</h2>
+                <div class="separator"></div>
+                    <p>Peruse the lab and learn more by visiting my <a href="#">bio</a>, article generator <a href="https://blog.willoughbylabs.com/" target="_blank" rel="noopener noreferrer">(blog)</a>, <a href="http://twitter.com/willowbeehive" target="_blank" rel="noopener noreferrer">social media</a>, or other <a href="#bottom">online dabbles</a>.
+                    </p>
+                </div> <!-- end #explore -->
             </main> 
-        </div>   <!-- end .wrapper -->     
+        </div>    <!-- end .wrapper --> 
         <div class="wrapper">
             <footer>
                 <section class="teachers">
-                    <div class="container">
-                        <div>
-                            <a href="https://openhousechicago.org" target="_blank" rel="noopener noreferrer">
-                            <img src="images/tribune.jpg" alt="View of Tribune Tower from a balcony, courtesy of Open House Chicago.">
-                            </a>
-                        </div>
-                    </div> <!-- end .container -->
-                    <div class="container">
+                        <a href="https://openhousechicago.org" target="_blank" rel="noopener noreferrer">
+                        <img src="images/tribune.jpg" alt="View of Tribune Tower from a balcony, courtesy of Open House Chicago.">
+                        </a>
                         <p>
                         <small>This site is brought to you by the teacher in everyone. Everything I know is from someone taking time to share their knowledge.</small>
                         </p>
-                    </div><!-- end .container -->
                 </section>
-                <section class="dabbles">
-                    <div class="container">   
+                <div class="container-links">
+                    <section class="links">
                         <h2>Online Dabbles</h2>
                             <ul>
                                 <li><a href="https://www.linkedin.com/in/willoughbylabs" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
@@ -95,8 +85,8 @@
                                 <li><a href="https://www.last.fm/user/willowbeehive" target="_blank" rel="noopener noreferrer">Last.fm</a></li>
                                 <li><a href="https://soundcloud.com/willowbeehive" target="_blank" rel="noopener noreferrer">SoundCloud</a></li>
                             </ul> 
-                    </div> <!-- end .container -->
-                </section>     
+                    </section> 
+                </div> <!-- end .wrapper -->    
             </footer>
             <a id="bottom"></a>
         </div> <!-- end .wrapper -->
