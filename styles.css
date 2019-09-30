@@ -1,4 +1,4 @@
-/* Testing - outlines, etc. for observing effects. Can delete after completion. */
+/* Testing area - outlines, etc. for observing effects. Can delete after completion. */
 
 /* 
     +++++
@@ -119,7 +119,7 @@ header img {
 }
 
 #dabbles a {
-    padding: .9rem;
+    padding: .5rem;
     text-align: center;
     border-radius: 25%;
 }
@@ -133,20 +133,39 @@ footer img {
     Typography 
     ++++++++++
 */
-a {
+.em {
+    font-style: italic;
+}
+
+.strong {
+    font-weight: 600;
+}
+
+nav a {
+    font-family: "Raleway" , sans-serif;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+    color: var(--green);
+}
+
+a.current-link {
+    color: var(--green);
+}
+
+#explore a {
     text-decoration: none;
     color: var(--green);
 }
 
-a:hover,
-a:active {
+#explore a:hover,
+#explore a:active,
+#explore a:visited {
     color: var(--salmon);
-}
-
-nav a{
-    font-family: "Raleway" , sans-serif;
-    font-weight: 400;
-    color: white;
 }
 
 h2, h3 {
@@ -154,14 +173,6 @@ h2, h3 {
     font-weight: 500;
     color: var(--cobalt);
     text-align: center;
-}
-
-.em {
-    font-style: italic;
-}
-
-.strong {
-    font-weight: 600;
 }
 
 #logo-slogan p{
@@ -219,4 +230,23 @@ main {
 #dabbles a:hover,
 #dabbles a:active {
     background-color: var(--cobalt);
+}
+
+/* 
+    +++++++++++++
+    Media Queries
+    +++++++++++++
+*/
+@media (max-width: 960px) and (orientation: landscape) {
+    nav {
+        height: 10vh;
+    }
+
+    nav ul {
+        height: 10vh;
+    }
+
+    #logo-slogan p {
+        margin: 0;
+    }
 }
