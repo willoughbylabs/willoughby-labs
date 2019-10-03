@@ -211,8 +211,9 @@ main {
     font-weight: 600;
 }
 
-#teachers p {
+small p{
     padding: 0 2rem;
+    margin-bottom: 1.5rem;
     color: var(--raisin);
     font-size: .85rem;
     font-style: italic; 
