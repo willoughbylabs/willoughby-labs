@@ -17,11 +17,36 @@ html {
 
 body {
     font-family: "Raleway", sans-serif;
+    color: var(--cobalt);
+}
+
+.em {
+    font-style: italic;
+}
+
+.strong {
+    font-weight: 600;
 }
 
 .container {
+    padding: 0;
     border: 1px red solid;
     max-width: 475px;
+}
+
+.separator {
+    width: 75px;
+    border-bottom: 5px solid var(--green);
+    margin: 0 auto 1rem;
+}
+
+h2, h3 {
+    font-family: "Cabin", sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
 }
 
 #main-nav {
@@ -46,8 +71,10 @@ header .d-flex {
     height: 90%;
 }
 
-header .img-fluid {
+header .img-fluid, 
+.about .img-fluid {
     max-width: 45%;
+    margin: 1rem auto;
 }
 
 header p {
@@ -56,6 +83,25 @@ header p {
     color: white;
     margin: 0.5rem 0 0;
     letter-spacing: 0.04em;
+}
+
+.about,
+.explore,
+.teacher {
+    padding: 0 1.75rem;
+    border: 1px red solid;
+    max-width: 475px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.motto ul li:first-letter {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.explore img {
+    max-width: 475px;
 }
 
 /* #think:hover, 

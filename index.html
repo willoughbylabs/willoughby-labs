@@ -19,7 +19,7 @@
         <!-- Navigation -->
         <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark" id="main-nav">
             <a href="#" class="navbar-brand">
-                <img src="images/Logo - Transparent.png" alt="Yellow and green honeycomb logo.">
+                <img src="images/logo_transparent.png" alt="Yellow and green honeycomb logo.">
                 Willoughby Labs
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav-links" aria-controls="main-nav-links" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,7 @@
         <!-- Header -->
         <header>
             <div class="d-flex flex-column align-items-center justify-content-center">
-                <img class="img-fluid" src="images/Logo - Transparent.png" alt="Yellow and green honeycomb logo.">
+                <img class="img-fluid" src="images/logo_transparent.png" alt="Yellow and green honeycomb logo.">
                 <p><span id="think">Think.</span></p>
                 <p><span id="learn">Learn.</span></p>
                 <p><span id="do">Do.</span></p>
@@ -45,39 +45,51 @@
         </header>
 
         <!-- About -->
-        <div class="container">
-            <img class="img-fluid" src="images/portrait_honeycomb_web.png" alt="Profile picture of site creator.">
-        </div> <!-- end container -->
-        
-        <div class="container">
-            <h2>About Me</h2>                
-            <p>My name is <span class="em strong">Andrew</span> but my friends call me <span class="em strong">Willoughby</span>. Welcome to my laboratory!</p>
-            <p>
-            Raised in an Air Force family, Chicago is my 10th place to call home. My passion for learning is driven by the belief that anything is possible with practice. My interests are expansive: from web dev, architecture, politics, and astronomy to video games, photography, music, and cycling, I like to make the most of my surroundings!
-            </p>     
-            <h3>Acrostic Motto</h3>
-            <ul>
-                <li>A sk questions</li>
-                <li>N avigate challenges</li>
-                <li>D efy expectations</li>
-                <li>R edefine “possible”</li>
-                <li>E arn responsibility</li>
-                <li>W ield integrity</li>
-            </ul> 
-        </div> <!-- end container -->
-
-        <!-- Explore -->
-        <div class="container">
-            <h2>Explore</h2>
-            <p>Peruse the lab and learn more by visiting my <a href="bio.html">full bio</a>, article generator <a href="https://blog.willoughbylabs.com/" target="_blank" rel="noopener noreferrer">(blog)</a>, <a href="http://twitter.com/willowbeehive" target="_blank" rel="noopener noreferrer">social media</a>, or other <a href="#bottom">online dabbles</a>.
-            </p>
-                <img class="img-fluid" src="images/tribune.jpg" alt="View of Tribune Tower from a balcony, taken during Open House Chicago.">
-            <small>
-                <p>
-                This site is brought to you by the teacher in everyone. Everything I've learned is from someone taking time to share their knowledge.
-                </p>
-            </small>
-        </div>
+        <main>
+            <div class="d-flex flex-column align-items-center">
+                <section class="about">
+                    <img class="img-fluid" src="images/portrait.png" alt="Profile picture of site creator.">
+                    <h2>About Me</h2>
+                    <div class="separator"></div>                
+                    <p>My name is <span class="em strong">Andrew</span> but my friends call me <span class="em strong">Willoughby</span>. Welcome to my laboratory!</p>
+                    <p>
+                    Raised in an Air Force family, Chicago is my 10th place to call home. My passion for learning is driven by the belief that <span class="em strong">anything is possible with practice</span>. My interests are expansive: from web dev, architecture, politics, and astronomy to video games, photography, music, and cycling, I like to make the most of my surroundings!
+                    </p>   
+                </section>
+                <section class="motto">
+                    <h3>Acrostic Motto</h3>
+                    <div class="separator"></div>
+                    <ul>
+                        <li>A sk questions</li>
+                        <li>N avigate challenges</li>
+                        <li>D efy expectations</li>
+                        <li>R edefine “possible”</li>
+                        <li>E arn responsibility</li>
+                        <li>W ield integrity</li>
+                    </ul> 
+                </section>
+            </div> <!-- end d-flex -->
+            
+            <!-- Explore -->
+            <div class="d-flex flex-column align-items-center">
+                <section class="explore">
+                    <h2>Explore</h2>
+                    <div class="separator"></div>
+                    <p>Peruse the lab and learn more by visiting my <a href="bio.html">full bio</a>, article generator <a href="https://blog.willoughbylabs.com/" target="_blank" rel="noopener noreferrer">(blog)</a>, <a href="http://twitter.com/willowbeehive" target="_blank" rel="noopener noreferrer">social media</a>, or other <a href="#bottom">online dabbles</a>.
+                    </p>
+                </section>
+                <div class="container">
+                    <img class="img-fluid" src="images/tribune.jpg" alt="View of Tribune Tower from a balcony, taken during Open House Chicago.">
+                </div>
+                <section class="teacher">
+                    <small>
+                        <p>
+                        This site is brought to you by the teacher in everyone. Everything I've learned is from someone taking time to share their knowledge.
+                        </p>
+                    </small>   
+                </section>
+            </div> <!-- end d-flex -->
+        </main>
         
         <!-- Dabble -->
         <div class="container">
