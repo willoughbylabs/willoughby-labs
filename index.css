@@ -11,6 +11,19 @@
     --salmon: #E44F59;
 }
 
+html {
+    font-size: 16px;
+}
+
+#main-nav {
+    background-color: var(--cobalt);
+}
+
+#main-nav .navbar-brand img{
+    width: 3rem;
+    padding-right: 0.5rem;
+}
+
 /* #think:hover, 
 #think:active {
     color: var(--salmon);
