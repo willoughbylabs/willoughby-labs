@@ -12,7 +12,16 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 100%;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.container {
+    border: 1px red solid;
+    max-width: 475px;
 }
 
 #main-nav {
@@ -22,6 +31,31 @@ html {
 #main-nav .navbar-brand img{
     width: 3rem;
     padding-right: 0.5rem;
+}
+
+.nav-link {
+    font-family: "Cabin", sans-serif;
+}
+
+header {
+    background-color: var(--cobalt);
+    height: 100vh;
+}
+
+header .d-flex {
+    height: 90%;
+}
+
+header .img-fluid {
+    max-width: 45%;
+}
+
+header p {
+    font-family: "Cabin", sans-serif;
+    font-size: 2rem;
+    color: white;
+    margin: 0.5rem 0 0;
+    letter-spacing: 0.04em;
 }
 
 /* #think:hover, 
