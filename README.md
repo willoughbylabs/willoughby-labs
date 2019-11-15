@@ -1,5 +1,5 @@
 # Willoughby Labs - Think. Learn. Do.
-*Personal brand, website, and playground for practicing what I learn.*
+*Personal website and playground for practicing what I learn.*
 
 Welcome to my laboratory! This site is where I apply concepts from learning, creating a historical record of a beginner’s journey through web development. As my capabilities improve, so too will the site and its features. 
 
