@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         
         <!-- Additional styles -->
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="css/index.css">
         <link href="https://fonts.googleapis.com/css?family=Cabin:400|Raleway:400,400i,600,600i&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="images/favi.ico" type="image/x-icon">
 
@@ -18,20 +18,22 @@
     <body>
         <!-- Navigation -->
         <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark" id="main-nav">
-            <a href="#" class="navbar-brand">
-                <img src="images/logo_transparent.png" alt="Yellow and green honeycomb logo.">
-                Willoughby Labs
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav-links" aria-controls="main-nav-links" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-            <div class="collapse navbar-collapse" id="main-nav-links">
-                <div class="navbar-nav align-items-center">
-                    <a href="#" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">About</a>
-                    <a href="#" class="nav-item nav-link">Dabble</a>
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="images/logo_transparent.png" alt="Yellow and green honeycomb logo.">
+                    Willoughby Labs
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav-links" aria-controls="main-nav-links" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-around" id="main-nav-links">
+                    <div class="navbar-nav align-items-center">
+                        <a href="#" class="nav-item nav-link">Home</a>
+                        <a href="#" class="nav-item nav-link">About</a>
+                        <a href="#" class="nav-item nav-link">Dabbles</a>
+                    </div>
                 </div>
-            </div>
+            </div> <!-- end container -->
         </nav>
 
         <!-- Header -->
@@ -90,29 +92,41 @@
                 </section>
             </div> <!-- end d-flex -->
         </main>
+
+        <!-- Dabbles -->
+        <section class="dabbles">
+            <div class="d-flex flex-column align-items-center">
+                <h2>Dabbles</h2>
+                <span class="separator"></span>
+                <button class="btn" type="button" data-toggle="collapse" data-target="#dabble-collapse" aria-expanded="false" aria-controls="dabble-collapse">V</button>
+            </div> <!-- end d-flex -->
+            <div class="d-flex">
+                <div class="collapse" id="dabble-collapse">
+                    <a href="https://www.linkedin.com/in/willoughbylabs" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/willoughbylabs" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.instagram.com/willowbeehive/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="http://twitter.com/willowbeehive" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a href="https://blog.willoughbylabs.com/" target="_blank" rel="noopener noreferrer">Blogger</a>
+                    <a href="https://ello.co/willowbeehive" target="_blank" rel="noopener noreferrer">Ello</a>
+                    <a href="https://8tracks.com/willowbeehive" target="_blank" rel="noopener noreferrer">8tracks</a>
+                    <a href="https://www.last.fm/user/willowbeehive" target="_blank" rel="noopener noreferrer">Last.fm</a>
+                    <a href="https://soundcloud.com/willowbeehive" target="_blank" rel="noopener noreferrer">SoundCloud</a>
+                </div> <!-- end collapse -->
+            </div> <!-- end d-flex -->
+            <div class="container">
+                <section class="copyright">
+                    <small>
+                        <p>Design & code by Andrew Willoughby 🐝 Chicago</p>
+                    </small>
+                </section>
+            </div>
+        </section>
         
-        <!-- Dabble -->
-        <div class="container">
-            <h2>Online Dabbles</h2>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/willoughbylabs" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="https://github.com/willoughbylabs" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li><a href="https://www.instagram.com/willowbeehive/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                <li><a href="http://twitter.com/willowbeehive" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                <li><a href="https://blog.willoughbylabs.com/" target="_blank" rel="noopener noreferrer">Blogger</a></li>
-                <li><a href="https://ello.co/willowbeehive" target="_blank" rel="noopener noreferrer">Ello</a></li>
-                <li><a href="https://8tracks.com/willowbeehive" target="_blank" rel="noopener noreferrer">8tracks</a></li>
-                <li><a href="https://www.last.fm/user/willowbeehive" target="_blank" rel="noopener noreferrer">Last.fm</a></li>
-                <li><a href="https://soundcloud.com/willowbeehive" target="_blank" rel="noopener noreferrer">SoundCloud</a></li>
-            </ul> 
-            <small>
-                <p>Design & code by Andrew Willoughby 🐝 Chicago</p>
-            </small>
-        </div>
     
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
     </body>
 </html>

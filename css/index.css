@@ -1,8 +1,3 @@
-/* 
-    +++++
-    Style
-    +++++ 
-*/
 :root {
     --cobalt: #28308C; 
     --golden: #FFD13D;
@@ -50,16 +45,34 @@ ul {
 }
 
 #main-nav {
+    padding: 5px;
     background-color: var(--cobalt);
 }
 
-#main-nav .navbar-brand img{
+.navbar.scrolled {
+    opacity: .97;
+    transition: opacity 1s;
+}
+
+#main-nav .navbar-brand img {
     width: 3rem;
     padding-right: 0.5rem;
 }
 
-.nav-link {
+#main-nav .nav-link {
     font-family: "Cabin", sans-serif;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    transition: background 300ms;
+}
+
+#main-nav .nav-link:hover {
+    background-color: var(--yellow);
+    /* color: rgba(255,255,255,.5); */
+    color: var(--cobalt);
 }
 
 header {
@@ -100,8 +113,27 @@ header p {
     font-weight: 600;
 }
 
-.explore img {
+.dabbles {
+    background-color: var(--yellow);
+    color: var(--raisin);
     max-width: 475px;
+    margin: 0 auto;
+}
+
+.dabbles button {
+    background-color: var(--green);
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.dabbles button:hover,
+.dabbles button:active {
+    background-color: var(--raisin);
+    color: white;
+}
+
+.dabbles a {
+    color: var(--raisin);
 }
 
 /* #think:hover, 
