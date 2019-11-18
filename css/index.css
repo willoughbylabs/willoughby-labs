@@ -15,6 +15,88 @@ body {
     color: var(--cobalt);
 }
 
+/* -------
+Navigation
+ */
+
+ #main-nav {
+    padding: 0; 
+}
+
+#nav-container {
+    background-color: var(--cobalt);
+}
+
+#nav-container.scrolled {
+    background-color: var(--golden);
+    transition: background 500ms;
+}
+
+#main-nav .navbar-brand {
+    color: white;
+}
+
+#main-nav .navbar-brand:hover {
+    color: var(--golden);
+}
+
+#main-nav .navbar-brand img {
+    width: 3rem;
+    padding-left: 5px;
+}
+
+#main-nav a.navbar-brand.scrolled {
+    color: var(--cobalt);
+}
+
+#main-nav a.navbar-brand.scrolled:hover {
+    color: white;
+}
+
+#main-nav .nav-link {
+    font-family: "Cabin", sans-serif;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 14px;
+    transition: background 300ms;
+}
+
+#main-nav .nav-link:hover {
+    background-color: var(--golden);
+    color: var(--raisin);
+}
+
+#main-nav a.nav-link.scrolled {
+    color: var(--cobalt);
+}
+
+#main-nav a.nav-link.scrolled:hover {
+    background-color: var(--cobalt);
+    color: white;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#FFF' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.navbar-dark .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#FFD13D' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.navbar-toggler-icon.scrolled {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#28308C' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.navbar-toggler-icon.scrolled:hover {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#FFF' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+/* ----------
+Content Style 
+*/
+
 .em {
     font-style: italic;
 }
@@ -43,80 +125,6 @@ ul {
     padding: 0;
 }
 
-#main-nav {
-    padding: 0; 
-}
-
-#nav-container {
-    background-color: var(--cobalt);
-}
-
-#nav-container.scrolled {
-    background-color: var(--green);
-    transition: background 500ms;
-}
-
-#main-nav .navbar-brand {
-    color: white;
-}
-
-#main-nav .navbar-brand:hover {
-    color: var(--yellow);
-}
-
-#main-nav .navbar-brand img {
-    width: 3rem;
-    padding-left: 5px;
-}
-
-#main-nav a.navbar-brand.scrolled {
-    color: white;
-}
-
-#main-nav a.navbar-brand.scrolled:hover {
-    color: var(--cobalt);
-}
-
-#main-nav .nav-link {
-    font-family: "Cabin", sans-serif;
-    color: white;
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-    padding: 14px;
-    transition: background 300ms;
-}
-
-#main-nav .nav-link:hover {
-    background-color: var(--yellow);
-    color: var(--raisin);
-}
-
-#main-nav a.nav-link.scrolled {
-    color: white;
-}
-
-#main-nav a.nav-link.scrolled:hover {
-    background-color: var(--cobalt);
-    color: white;
-}
-
-.navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#FFF' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
-}
-
-.navbar-dark .navbar-toggler-icon:hover {
-    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#FFD13D' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
-}
-
-.navbar-toggler-icon.scrolled {
-    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#FFF' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
-}
-
-.navbar-toggler-icon.scrolled:hover {
-    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#28308C' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
-}
-
 header {
     background-color: var(--cobalt);
     height: 100vh;
@@ -140,6 +148,16 @@ header p {
     letter-spacing: 0.04em;
 }
 
+#think:hover {
+    color: var(--salmon);
+}
+#learn:hover {
+    color: var(--golden);
+}
+#do:hover {
+    color: var(--green);
+}
+
 .about,
 .explore,
 .teacher {
@@ -154,6 +172,23 @@ header p {
     font-weight: 600;
 }
 
+.explore a {
+    text-decoration: none;
+    color: var(--salmon);
+}
+
+.explore a:hover {
+    color: var(--green);
+}
+
+.explore a:visited {
+    color: #9F373E;
+}
+
+.explore a:visited:hover {
+    color: var(--green);
+}
+
 .teacher {
     background-color: var(--salmon);
     color:  #d9d9d9;
@@ -162,7 +197,7 @@ header p {
 }
 
 .dabbles {
-    background-color: var(--yellow);
+    background-color: var(--golden);
     color: var(--raisin);
     max-width: 475px;
     margin: 0 auto 2rem;
@@ -173,14 +208,13 @@ header p {
 }
 
 .dabbles button {
-    background-color: var(--raisin);
+    background-color: var(--green);
     color: white;
     margin-bottom: 0.5rem;
 }
 
-.dabbles button:hover,
-.dabbles button:active {
-    background-color: var(--green);
+.dabbles button:hover {
+    background-color: var(--raisin);
     color: white;
 }
 
@@ -195,12 +229,19 @@ header p {
 }
 
 .dabbles a {
+    padding: 0.2rem;
     color: var(--raisin);
     text-decoration: none;
 }
 
+.dabbles a:hover {
+    color: var(--salmon);
+    border-top: 1px solid var(--raisin);
+    border-bottom: 1px solid var(--raisin);
+}
+
 .copyright {
-    color: white;
+    color: var(--raisin);
     font-size: 0.9rem;
     text-align: center;
     padding: 1rem 0;
@@ -217,24 +258,3 @@ Media Query
         font-size: 1.5rem;
     }
 }
-
-/* #think:hover, 
-#think:active {
-    color: var(--salmon);
-}
-#learn:hover, 
-#learn:active {
-    color: var(--golden);
-}
-#do:hover, 
-#do:active {
-    color: var(--green);
-}
-
-.em {
-    font-style: italic;
-}
-
-.strong {
-    font-weight: 600;
-} */
