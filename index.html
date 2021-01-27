@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap stylesheet -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css">
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="/css/index.css">
     <!-- Favicon -->
@@ -13,22 +18,45 @@
 
 <body>
     <div class="wrapper-body">
+
         <div id="sidebar">
-            <div class="logo-brand">
+            <div class="sidebar-logo">
+                <div class="sidebar-logo-img">
+                    <img src="/images/logo-transparent.svg"
+                        alt="Willoughby Labs logo, intertwined letters 'AVW' in a star shape">
+                </div>
+            </div> <!-- end sidebar-logo -->
 
+            <div class="sidebar-header">
+                <div class="sidebar-header-title">
+                    <h1>Willoughby Labs</h1>
+                </div>
+                <div class="sidebar-header-nav">
+                    <ul>
+                        <li>Projects</li>
+                        <li>Article Generator</li>
+                        <li>Storage Bay</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+            </div> <!-- end header -->
+        </div> <!-- end sidebar -->
+
+        <div id="content-main" class="bkg-dark-md">
+            <div class="content-title">
+                <h2>Title of Page Here</h2>
             </div>
-            <div class="header-title">
-
+            <div class="content-body">
+                <p>Content for page here. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde neque magni,
+                    reprehenderit repudiandae ea natus velit veritatis hic repellendus optio porro possimus animi
+                    aliquam voluptatum quaerat? Sit debitis facere unde.</p>
             </div>
-            <div class="header-nav">
-
-            </div>
-        </div>
-        <div id="content-main">
-
-        </div>
-    </div>
-
+        </div> <!-- end content-main -->
+    </div> <!-- end wrapper-body -->
+    <!-- Bootstrap script -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script> -->
 </body>
 
 </html>
