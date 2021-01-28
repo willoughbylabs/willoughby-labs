@@ -1,0 +1,36 @@
+:root {
+    --cobalt: #28308C; 
+    --golden: #FFD13D;
+    --green: #14AA5D;
+    --raisin: #2E1F27;
+    --salmon: #E44F59;
+}
+
+html {
+    min-height: 100%;
+    /* TODO Add background color fallback */
+    background-image: url(/images/western.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.bkg-dark-md {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.wrapper-body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(150px, 300px) 8fr;
+}
+
+#sidebar {
+    color: white;
+    background-color:rgba(0, 0, 0, 0.90);
+}
+
+#content-main {
+    color: white;
+}
