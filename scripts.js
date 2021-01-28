@@ -1,4 +1,5 @@
-import { html, render } from 'https://unpkg.com/lit-html?module';
+import { render } from "https://unpkg.com/lit-html?module";
+import { renderTitle, homeContentBody, projectsContentBody, blogContentBody, storageContentBody, aboutContentBody } from "./templates.js";
 
 const divSidebar = document.querySelector("#sidebar");
 const divContentMain = document.querySelector("#content-main");
@@ -13,10 +14,15 @@ divSidebar.addEventListener('click', sidebarClick);
 
 function sidebarClick(evt) {
     const tagName = evt.target.tagName;
-    const page = evt.target.textContent;
+    let page = evt.target.textContent;
+    const classes = evt.target.classList;
     // Display home page.
-    if (tagName === "H1" || tagName === "IMG") {
+    if (classes.contains("home")) {
         divContentMain.classList.remove("bkg-dark-md");
+        page = "home";
+        const heading = "Willoughby Labs";
+        displayContentTitle(heading);
+        displayContentBody(page);
     }
     // Display selected content for clicked sidebar link
     else if (tagName === "LI") {
@@ -26,16 +32,28 @@ function sidebarClick(evt) {
     }
 }
 
-/* HTML TEMPLATES */
+/* HTML TEMPLATE RENDERING */
 
 function displayContentTitle(page) {
-    const renderTitle = (titleText) => html`<h2>${titleText}</h2>`;
     render(renderTitle(page), divContentTitle);
 }
 
 function displayContentBody(page) {
-    const renderBody = html`
-    <p>Content for ${page} page. Lorem so and so stuff and stuff.</p>
-    `;
-    render(renderBody, divContentBody);
+    switch (page) {
+        case "home":
+            render(homeContentBody, divContentBody);
+            break;
+        case "Projects":
+            render(projectsContentBody, divContentBody);
+            break;
+        case "Article Generator":
+            render(blogContentBody, divContentBody);
+            break;
+        case "Storage Bay":
+            render(storageContentBody, divContentBody);
+            break;
+        case "About":
+            render(aboutContentBody, divContentBody);
+            break;
+    }
 }
