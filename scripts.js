@@ -6,11 +6,13 @@ const divContent = document.querySelector("#content");
 const divContentTitle = document.querySelector(".content-title");
 const divContentBody = document.querySelector(".content-body");
 const navToggle = document.querySelector(".nav-toggle");
+const footer = document.querySelector("#footer");
 const footerNav = document.querySelector(".footer-nav");
 
 /* EVENT HANDLERS */
 
 divSidebar.addEventListener("click", sidebarClick);
+footer.addEventListener("click", footerClick);
 navToggle.addEventListener("click", toggleMobileNav);
 
 /* SIDEBAR FUNCTIONALITY */
@@ -21,10 +23,10 @@ function sidebarClick(evt) {
     const classes = evt.target.classList;
     // Display home page.
     if (classes.contains("home")) {
-        const divPageTitle = document.querySelector(".page-title");
+        const title = "";
         divContent.classList.remove("bkg-dark-md");
-        divPageTitle.innerText = "";
         page = "home";
+        displayContentTitle(title);
         displayContentBody(page);
     }
     // Display selected content for clicked sidebar link
@@ -35,9 +37,17 @@ function sidebarClick(evt) {
     }
 }
 
-/* NAV TOGGLER */
+/* FOOTER NAV */
 function toggleMobileNav() {
     footerNav.classList.toggle("display-none");
+}
+
+function footerClick(evt) {
+    sidebarClick(evt);
+    const tagName = evt.target.tagName;
+    if (tagName === "A" || tagName === "LI") {
+        footerNav.classList.toggle("display-none");
+    }
 }
 
 /* HTML TEMPLATE RENDERING */
