@@ -45,8 +45,8 @@ function toggleMobileNav() {
 function footerClick(evt) {
     sidebarClick(evt);
     const tagName = evt.target.tagName;
-    if (tagName === "A" || tagName === "LI") {
-        footerNav.classList.toggle("display-none");
+    if (tagName === "A" || tagName === "LI" || tagName === "IMG") {
+        footerNav.classList.add("display-none");
     }
 }
 

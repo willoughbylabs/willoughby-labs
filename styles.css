@@ -85,7 +85,7 @@ h3.home {
 .sidebar-header {
     color: white;
     font-family: var(--ff-header);
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -118,7 +118,7 @@ h3.home {
 /* MOBILE NAV */
 
 #footer { 
-    background-color:rgba(0, 0, 0, 0.90);
+    background-color:black;
     width: 100%;
     overflow: hidden;
     position: fixed;
@@ -160,14 +160,16 @@ h3.home {
     display: grid;
     grid-template-columns: minmax(200px, 300px) 1fr;
     place-items: center;
+     padding-bottom: 95px;
 }
 
 .content-title {
-    text-align: center;
-    width: 100%;
     font-family: var(--ff-header);
     font-size: var(--fs-heading-page);
+    text-align: center;
+    text-transform: uppercase;
     color: var(--green);
+    width: 100%;
 }
 
 .content-body {
@@ -215,7 +217,7 @@ h3.home {
 
 @media (max-width: 800px) {
     #content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
     }
 }
 

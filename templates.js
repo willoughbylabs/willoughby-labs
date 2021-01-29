@@ -7,7 +7,6 @@ export const renderTitle = (titleText) => html`<h2 class="page-title">${titleTex
 
 // HOME PAGE
 export const homeContentBody = html`
-    <h2 class="home">Willoughby Labs</h2>
     <h3 class="home">Make fetch happen</h3>
 `;
 
@@ -108,7 +107,8 @@ export const aboutContentBody = html`
             do?
             Or is this what I was created for? To huddle under the blankets and stay warm?"</p>
         <p>-Marcus Aurelius</p>
-        <p>I do like me some covers, but Marcus Aurelius is right - <span class="highlight">fetch</span> can’t happen
+        <p>I'm not a fan of winter, and I do really really like me some comfy covers, but Marcus Aurelius has a point -
+            <span class="highlight">fetch</span> can’t happen
             without us making <span class="highlight">fetch</span> happen.</p>
         <iframe src="https://giphy.com/embed/l2YWgOm7cak7P4Cly" width="480" height="270" frameBorder="0"
             class="giphy-embed" allowFullScreen></iframe>
