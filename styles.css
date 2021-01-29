@@ -153,6 +153,15 @@ img {
 
 /* PAGE CONTENT */
 
+#content {
+    min-width: 400px; 
+    height: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: minmax(200px, 300px) 1fr;
+    place-items: center;
+}
+
 h3.home {
     background-color: rgba(0, 0, 0, 0.75);
     padding: 1rem;
@@ -160,15 +169,6 @@ h3.home {
     font-family: var(--ff-tagline);
     font-size: var(--fs-tagline);
     color: var(--green);
-}
-
-#content {
-    min-width: 420px;
-    height: 100%;
-    color: white;
-    display: grid;
-    grid-template-columns: minmax(200px, 300px) 1fr;
-    place-items: center;
 }
 
 .content-title {
@@ -181,7 +181,7 @@ h3.home {
 }
 
 .content-body {
-    max-width: 500px;
+    max-width: 600px;
     text-align: justify;
 }
 
