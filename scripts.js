@@ -21,10 +21,10 @@ function sidebarClick(evt) {
     const classes = evt.target.classList;
     // Display home page.
     if (classes.contains("home")) {
+        const divPageTitle = document.querySelector(".page-title");
         divContent.classList.remove("bkg-dark-md");
+        divPageTitle.innerText = "";
         page = "home";
-        const heading = "Willoughby Labs";
-        displayContentTitle(heading);
         displayContentBody(page);
     }
     // Display selected content for clicked sidebar link
