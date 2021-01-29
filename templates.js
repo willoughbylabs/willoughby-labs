@@ -7,16 +7,18 @@ export const renderTitle = (titleText) => html`<h2 class="page-title">${titleTex
 
 // HOME PAGE
 export const homeContentBody = html`
-    <h3>Make fetch happen</h3>
+    <h2 class="home">Willoughby Labs</h2>
+    <h3 class="home">Make fetch happen</h3>
 `;
 
 // PROJECTS PAGE
 export const projectsContentBody = html`
 <div class="content-body-intro">
     <section>
-        <p>Brought to you by the teacher in everyone. Please peruse the lab, and I hope you'll discover and share
+        <p>Brought to you by the <span class="highlight">teacher</span> in everyone. Please peruse the lab, and I hope
+            you'll <span class="highlight">discover</span> and <span class="highlight">share</span>
             something
-            interesting(strikethrough) fetch
+            <span class="strikethrough">interesting</span> <span class="highlight">fetch</span>
             today.</p>
     </section>
 </div>
@@ -25,9 +27,11 @@ export const projectsContentBody = html`
     <section>
         <div class="content-body-card">
             <div class="card-img">
-                <p>Insert GIF of project here</p>
+                <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe
+                        src="https://giphy.com/embed/3VL0SRCEhQ63bqURDZ" width="100%" height="100%"
+                        style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
             </div>
-            <div class="card-title">
+            <div class="card-content">
                 <h4>myChi</h4>
                 <h5>A Concise Data Dashboard</h5>
             </div>
@@ -42,13 +46,19 @@ export const blogContentBody = html`
     <section>
         <p>I'm not passionate about hot dogs, but sometimes I'm in the mood for them (especially when dragged through
             the
-            garden, Chicago style). Similarly, sometimes I'm in the mood for writing. My favorite writing tool is
-            Notion.
-            It's fetch. Insert "so fetch" GIF.
-            When Notion's API launches I will integrate
+            garden, Chicago style). Similarly, sometimes I'm in the mood for writing.</p>
+        <p>My favorite writing tool is
+            <a href="#">Notion</a>. It's <span class="highlight">fetch</span>.</p>
+        <div class="content-gif">
+            <iframe src="https://giphy.com/embed/3otPoUjeyRisIDxPhK" width="480" height="270" frameBorder="0"
+                class="giphy-embed" allowFullScreen></iframe>
+        </div>
+        <p>When Notion's API launches I will integrate
             a
-            blog here but for now I copy my penning to Blogger. For a TL;DR version of my literature, I also compose on
-            Twitter.</p>
+            blog here but for now I copy my penning to<a href="#">Blogger</a>.</p>
+        <p>For a <span class="highlight">TL;DR</span> version of my literature, I also compose on
+            <a href="#">Twitter</a>.
+        </p>
     </section>
 </div>
 `;
@@ -57,10 +67,13 @@ export const blogContentBody = html`
 export const storageContentBody = html`
 <div class="content-body-intro">
     <section>
-        <p>Thanks to the World Wide Web, these bits of life can now collect dust(strikethrough) in a
-            virtual attic. I'm going to need a bigger boat(strikethrough) database to make this work efficiently so
+        <p>Thanks to the <span class="highlight">World Wide Web</span>, these bits of life can now collect <span
+                class="strikethrough">dust</span> in a
+            <span class="highlight">virtual attic</span>. I'm going to need a <span class="strikethrough">bigger
+                boat</span> database to make this work
+            efficiently so
             please
-            check back early and often
+            check back <span class="highlight">early and often</span>
             for the inevitable content.</p>
     </section>
 </div>
@@ -70,29 +83,36 @@ export const storageContentBody = html`
 export const aboutContentBody = html`
 <div class="content-body-intro">
     <section>
-        <p>My name is Andrew but my friends call me Willoughby. Welcome to my laboratory!</p>
+        <p>My name is Andrew but my friends call me <span class="highlight">Willoughby</span>. Welcome to my <span
+                class="highlight">laboratory</span>!
+        </p>
     </section>
 </div>
 
 <div class="content-body-main">
     <section>
-        <p>Raised in an Air Force family, Chicago is my 10th place to call home. I like to learn and ponder so my
-            interests
-            expand like the universe. From web dev, architecture, politics, and astronomy to video games, photography,
-            vinyl, and cycling, I'm only bored when I want to be. I'm a fledgling developer, and my intended projects
+        <p>Raised in an Air Force family, <span class="highlight">Chicago</span> is my 10th place to call home. I like
+            to learn and ponder so my
+            <span class="highlight">interests expand</span> like the universe. From web dev, architecture, politics, and
+            astronomy to video games, photography,
+            vinyl, and cycling, I'm only bored when I want to be. I'm a <span class="highlight">fledgling
+                developer</span>, and my intended projects
             are
-            inspired by simplifying raw data; I feel "seeing the numbers" in a digestible format helps generate
+            inspired by <span class="highlight">simplifying raw data</span>; I feel "seeing the numbers" in a digestible
+            format helps generate
             fact-based
-            opinions. Insert "the
-            more you know" GIF. </p>
+            opinions.</p>
         <p>"At dawn, when you have trouble getting out of bed, tell yourself: ‘I have to go to work—as a human being.
             What
             do I have to complain of, if I’m going to do what I was born for—the things I was brought into the world to
             do?
             Or is this what I was created for? To huddle under the blankets and stay warm?"</p>
         <p>-Marcus Aurelius</p>
-        <p>I do like me some covers, but Marcus Aurelius is right - fetch can’t happen without us making fetch happen.
-            Insert “fetch is never going to happen” GIF. Let’s prove Regina wrong.</p>
+        <p>I do like me some covers, but Marcus Aurelius is right - <span class="highlight">fetch</span> can’t happen
+            without us making <span class="highlight">fetch</span> happen.</p>
+        <iframe src="https://giphy.com/embed/l2YWgOm7cak7P4Cly" width="480" height="270" frameBorder="0"
+            class="giphy-embed" allowFullScreen></iframe>
+        <p>Let’s prove Regina wrong.</p>
     </section>
 </div>
 `;
