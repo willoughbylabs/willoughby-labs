@@ -5,10 +5,13 @@ const divSidebar = document.querySelector("#sidebar");
 const divContent = document.querySelector("#content");
 const divContentTitle = document.querySelector(".content-title");
 const divContentBody = document.querySelector(".content-body");
+const navToggle = document.querySelector(".nav-toggle");
+const footerNav = document.querySelector(".footer-nav");
 
 /* EVENT HANDLERS */
 
-divSidebar.addEventListener('click', sidebarClick);
+divSidebar.addEventListener("click", sidebarClick);
+navToggle.addEventListener("click", toggleMobileNav);
 
 /* SIDEBAR FUNCTIONALITY */
 
@@ -25,11 +28,16 @@ function sidebarClick(evt) {
         displayContentBody(page);
     }
     // Display selected content for clicked sidebar link
-    else if (tagName === "LI") {
+    else if (tagName === "A" || tagName === "LI") {
         divContent.classList.add("bkg-dark-md");
         displayContentTitle(page);
         displayContentBody(page);
     }
+}
+
+/* NAV TOGGLER */
+function toggleMobileNav() {
+    footerNav.classList.toggle("display-none");
 }
 
 /* HTML TEMPLATE RENDERING */
