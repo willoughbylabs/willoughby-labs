@@ -7,9 +7,8 @@
     --ff-body: 'Titillium Web', sans-serif;
     --ff-tagline: 'Satisfy', cursive;
 
-    --fs-body: 1rem;
+    --fs-body: 1.1rem;
     --fs-navlink: 1.1rem;
-    --fs-home-content-header: 3.5rem;
     --fs-tagline: 3rem;
     --fs-heading-page: 1.5rem;
 }
@@ -59,16 +58,13 @@ img {
     text-decoration-style: double;
 }
 
-h2.home {
-    font-family: var(--ff-header);
-    font-size: var(--fs-home-content-header);
-    color: white;
-}
-
 h3.home {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 1rem;
+    border-radius: .3rem;
     font-family: var(--ff-tagline);
     font-size: var(--fs-tagline);
-
+    color: var(--green);
 }
 
 .content-body .highlight {
@@ -79,7 +75,11 @@ h3.home {
 
 #sidebar {
     background-color:rgba(0, 0, 0, 0.90);
-    padding: 0 1.5rem;
+    padding: 1.5rem 1.5rem;
+}
+
+.sidebar-logo {
+    max-width: 75px;
 }
 
 .sidebar-header {
@@ -159,25 +159,27 @@ h3.home {
     color: white;
     display: grid;
     grid-template-columns: minmax(200px, 300px) 1fr;
-    /* place-items: center; */
+    place-items: center;
 }
 
 .content-title {
+    text-align: center;
     width: 100%;
+    font-family: var(--ff-header);
     font-size: var(--fs-heading-page);
     color: var(--green);
-    align-self: center;
 }
 
 .content-body {
-    width: 100%;
-    align-self: center;
+    max-width: 500px;
+    text-align: justify;
+    padding: 2rem;
 }
 
 /* PAGE CONTENT CARDS */
 
 .content-body-card {
-    max-width: 400px;
+    max-width: 450px;
     border: 1px solid #797979;
     border-radius: 0 0 .5rem .5rem;
 }
