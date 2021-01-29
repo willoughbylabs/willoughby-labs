@@ -161,6 +161,7 @@ img {
     grid-template-columns: minmax(200px, 300px) 1fr;
     place-items: center;
     margin-bottom: 200px;
+    padding: 2rem;
 }
 
 h3.home {
@@ -230,7 +231,7 @@ h3.home {
 @media (max-width: 800px) {
     #content {
         grid-template-columns: 1fr; 
-        margin-bottom: 450px;
+        margin-bottom: 250px;
     }
 }
 
