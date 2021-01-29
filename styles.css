@@ -8,7 +8,9 @@
     --ff-tagline: 'Satisfy', cursive;
 
     --fs-body: 1rem;
-    --fs-secondary: 1.1rem;
+    --fs-navlink: 1.1rem;
+    --fs-home-content-header: 3.5rem;
+    --fs-tagline: 3rem;
     --fs-heading-page: 1.5rem;
 }
 
@@ -50,6 +52,29 @@ img {
     display: none;
 }
 
+/* TYPOGRAPHY */
+
+.strikethrough {
+    text-decoration: line-through;
+    text-decoration-style: double;
+}
+
+h2.home {
+    font-family: var(--ff-header);
+    font-size: var(--fs-home-content-header);
+    color: white;
+}
+
+h3.home {
+    font-family: var(--ff-tagline);
+    font-size: var(--fs-tagline);
+
+}
+
+.content-body .highlight {
+    color: var(--green);
+}
+
 /* SIDEBAR  */
 
 #sidebar {
@@ -68,7 +93,7 @@ img {
 .mobile-nav {
     font-family: var(--ff-header);
     font-weight: 400;
-    font-size: var(--fs-secondary);
+    font-size: var(--fs-navlink);
     line-height: 2rem;
     text-transform: uppercase;
 }
@@ -103,6 +128,7 @@ img {
 #footer .navbar {
     display: flex;
     justify-content: space-between;
+    padding: 1em;
 }
 
 .mobile-nav-logo {
@@ -137,14 +163,34 @@ img {
 }
 
 .content-title {
+    width: 100%;
     font-size: var(--fs-heading-page);
     color: var(--green);
     align-self: center;
 }
 
 .content-body {
-    /* width: 80%; */
+    width: 100%;
     align-self: center;
+}
+
+/* PAGE CONTENT CARDS */
+
+.content-body-card {
+    max-width: 400px;
+    border: 1px solid #797979;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.card-img {
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    background-color:rgba(0, 0, 0, 0.90);
+    border-radius: 0 0 .5rem .5rem;
+    padding: 1rem;
 }
 
 /* MEDIA QUERIES */
