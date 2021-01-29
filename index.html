@@ -4,9 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap stylesheet -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="https://unpkg.com/normalize.css">
     <!-- CSS stylesheet -->
@@ -17,40 +14,36 @@
 </head>
 
 <body>
-    <div class="wrapper-body">
+    <div class="body-grid">
 
         <div id="sidebar">
             <div class="sidebar-logo">
-                <div class="sidebar-logo-img">
-                    <img src="/images/logo-transparent.svg"
-                        alt="Willoughby Labs logo, intertwined letters 'AVW' in a star shape" class="home">
-                </div>
+                <img src="/images/logo-transparent.svg"
+                    alt="Willoughby Labs logo, intertwined letters 'AVW' in a star shape" class="home">
             </div> <!-- end sidebar-logo -->
 
             <div class="sidebar-header">
-                <div class="sidebar-header-title">
-                    <h1 class="home foo">Willoughby Labs</h1>
-                </div>
-                <div class="sidebar-header-nav">
-                    <ul>
-                        <li class="projects">Projects</li>
-                        <li class="blog">Article Generator</li>
-                        <li class="storage">Storage Bay</li>
-                        <li class="about">About</li>
-                    </ul>
-                </div>
-            </div> <!-- end header -->
+                <h1 class="home">Willoughby Labs</h1>
+            </div> <!-- end sidebar-header -->
+            <div class="sidebar-nav">
+                <ul>
+                    <li class="projects">Projects</li>
+                    <li class="blog">Article Generator</li>
+                    <li class="storage">Storage Bay</li>
+                    <li class="about">About</li>
+                </ul>
+            </div> <!-- end sidebar-nav -->
         </div> <!-- end sidebar -->
 
-        <div id="content-main">
+        <div id="content">
             <div class="content-title">
                 <h2>Willoughby Labs</h2>
             </div>
             <div class="content-body">
                 <h3>Make fetch happen</h3>
             </div>
-        </div> <!-- end content-main -->
-    </div> <!-- end wrapper-body -->
+        </div> <!-- end content -->
+    </div> <!-- end body-grid -->
     <script src="scripts.js" type="module"></script>
     <!-- Bootstrap script -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"

@@ -2,7 +2,7 @@ import { render } from "https://unpkg.com/lit-html?module";
 import { renderTitle, homeContentBody, projectsContentBody, blogContentBody, storageContentBody, aboutContentBody } from "./templates.js";
 
 const divSidebar = document.querySelector("#sidebar");
-const divContentMain = document.querySelector("#content-main");
+const divContent = document.querySelector("#content");
 const divContentTitle = document.querySelector(".content-title");
 const divContentBody = document.querySelector(".content-body");
 
@@ -18,7 +18,7 @@ function sidebarClick(evt) {
     const classes = evt.target.classList;
     // Display home page.
     if (classes.contains("home")) {
-        divContentMain.classList.remove("bkg-dark-md");
+        divContent.classList.remove("bkg-dark-md");
         page = "home";
         const heading = "Willoughby Labs";
         displayContentTitle(heading);
@@ -26,7 +26,7 @@ function sidebarClick(evt) {
     }
     // Display selected content for clicked sidebar link
     else if (tagName === "LI") {
-        divContentMain.classList.add("bkg-dark-md");
+        divContent.classList.add("bkg-dark-md");
         displayContentTitle(page);
         displayContentBody(page);
     }

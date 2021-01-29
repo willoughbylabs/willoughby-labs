@@ -1,9 +1,16 @@
 import { html } from "https://unpkg.com/lit-html?module";
 
+// PAGE TITLE
+export const renderTitle = (titleText) => html`<h2 class="page-title">${titleText}</h2>`;
+
+// PAGE CONTENT
+
+// HOME PAGE
 export const homeContentBody = html`
     <h3>Make fetch happen</h3>
 `;
 
+// PROJECTS PAGE
 export const projectsContentBody = html`
 <div class="content-body-intro">
     <p>Brought to you by the teacher in everyone. Please peruse the lab, and I hope you'll discover and share something
@@ -24,6 +31,7 @@ export const projectsContentBody = html`
 </div>
 `;
 
+// BLOG PAGE
 export const blogContentBody = html`
 <div class="content-body-intro">
     <p>I'm not passionate about hot dogs, but sometimes I'm in the mood for them (especially when dragged through the
@@ -36,6 +44,7 @@ export const blogContentBody = html`
 </div>
 `;
 
+// STORAGE PAGE
 export const storageContentBody = html`
 <div class="content-body-intro">
     <p>Thanks to the World Wide Web, these bits of life can now collect dust(strikethrough) in a
@@ -45,6 +54,7 @@ export const storageContentBody = html`
 </div>
 `;
 
+// ABOUT PAGE
 export const aboutContentBody = html`
 <div class="content-body-intro">
     <p>My name is Andrew but my friends call me Willoughby. Welcome to my laboratory!</p>
@@ -65,6 +75,3 @@ export const aboutContentBody = html`
         Insert “fetch is never going to happen” GIF. Let’s prove Regina wrong.</p>
 </div>
 `;
-
-
-export const renderTitle = (titleText) => html`<h2>${titleText}</h2>`;
