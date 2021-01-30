@@ -31,8 +31,15 @@ export const projectsContentBody = html`
                         style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
             </div>
             <div class="card-content">
-                <h4></a>myChi</h4>
-                <h5>A Concise Data Dashboard</h5>
+                <div class="card-content-header">
+                    <h4><a href="https://github.com/willoughbylabs/mychi" target="_blank"
+                            rel="noopener noreferrer">myChi</a></h4>
+                </div>
+                <div class="card-content-caption">
+                    <h5>A Concise Data Dashboard</h5>
+                    <a href="https://github.com/willoughbylabs/mychi" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
     </section>

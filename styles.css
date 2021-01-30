@@ -1,5 +1,5 @@
 :root {
-    --golden: #FFD13D;
+    --golden: #ffe695;
     --green: #8BD4A0;
     --salmon: #E44F59;
 
@@ -23,7 +23,7 @@
 
 body {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-image: url(/images/western.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,11 +73,16 @@ img {
     max-width: 75px;
 }
 
-.sidebar-header {
+.sidebar-header a {
     color: white;
     font-family: var(--ff-header);
     font-weight: 400;
     text-transform: uppercase;
+    text-decoration: none;
+}
+
+.sidebar-header a:hover {
+    color: var(--golden);
 }
 
 .sidebar-nav, 
@@ -158,6 +163,7 @@ h3.home {
 /* PAGE CONTENT CARDS */
 
 .content-body-card {
+    margin: auto;
     max-width: 450px;
     border: 1px solid #797979;
     border-radius: 0 0 .5rem .5rem;
@@ -171,8 +177,36 @@ h3.home {
 .card-content {
     background-color:rgba(0, 0, 0, 0.90);
     border-radius: 0 0 .5rem .5rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
+
+.card-content-header h4 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: var(--ff-header);
+    font-size: var(--fs-body);
+}
+
+.card-content-caption h5 {
+    margin: 0;
+    font-size: var(--fs-body);
+    color: var(--green);
+}
+.card-content-caption {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-content a {
+    font-size: var(--fs-body);
+    color: var(--salmon);
+    text-decoration: none;
+}
+
+.card-content a:hover {
+    color: var(--green);
+}
+
 
 /* MOBILE NAV */
 
