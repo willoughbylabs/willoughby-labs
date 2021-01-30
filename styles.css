@@ -39,7 +39,8 @@ img {
 }
 
 .body-grid {
-    /* overflow: hidden; */
+    height: 100vh;
+    width: 100vw;
     display: grid;
     grid-template-columns: minmax(150px, 300px) minmax(350px, 1fr);
 }
@@ -137,6 +138,10 @@ h3.home {
     text-transform: uppercase;
     color: var(--green);
     width: 100%;
+}
+
+.content-body-content {
+    overflow: hidden;
 }
 
 .content-body {
