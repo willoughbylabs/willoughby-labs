@@ -32,8 +32,8 @@ export const projectsContentBody = html`
             </div>
             <div class="card-content">
                 <div class="card-content-header">
-                    <h4><a href="https://github.com/willoughbylabs/mychi" target="_blank"
-                            rel="noopener noreferrer">myChi</a></h4>
+                    <h4><a href="http://mychi.willoughbylabs.com" target="_blank" rel="noopener noreferrer">myChi</a>
+                    </h4>
                 </div>
                 <div class="card-content-caption">
                     <h5>A Concise Data Dashboard</h5>
@@ -99,7 +99,8 @@ export const aboutContentBody = html`
 
 <div class="content-body-main">
     <section>
-        <p>Raised in an Air Force family, <span class="highlight">Chicago</span> is my 10th place to call home. I like
+        <p>Raised in an Air Force family, <span class="highlight">Chicago</span> is my 10th place to call <span
+                class="highlight">home</span>. I like
             to learn and ponder so my
             <span class="highlight">interests expand</span> like the universe. From web dev, architecture, politics, and
             astronomy to video games, photography,
@@ -110,21 +111,22 @@ export const aboutContentBody = html`
             format helps generate
             fact-based
             opinions.</p>
-        <blockquote>"At dawn, when you have trouble getting out of bed, tell yourself: ‘I have to go to work—as a human
-            being.
+        <blockquote>"At dawn, when you have trouble getting out of bed, tell yourself: ‘I have to go to work—as a <span
+                class="highlight">human</span> being.
             What
             do I have to complain of, if I’m going to do what I was born for—the things I was brought into the world to
             do?
             Or is this what I was created for? To huddle under the blankets and stay warm?" -Marcus Aurelius
         </blockquote>
-        <p>I'm not a fan of winter, and I do really really like me some comfy covers, but Marcus Aurelius has a point -
+        <p>I'm not a fan of winter, and I do really really like me some warm and comfy covers, but Marcus Aurelius has a
+            point -
             <span class="highlight">fetch</span> can’t happen
             without us making <span class="highlight">fetch</span> happen.</p>
         <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe
                 src="https://giphy.com/embed/l2YWgOm7cak7P4Cly" width="100%" height="100%" style="position:absolute"
                 frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
-        <p>Let’s prove Regina wrong. :)</p>
+        <p>So<span class="highlight"> let’s </span>prove Regina wrong. :)</p>
     </section>
 </div>
 `;

@@ -1,7 +1,8 @@
 :root {
-    --golden: #ffe695;
+    --golden: #fde38e;
     --green: #8BD4A0;
     --salmon: #E44F59;
+    --white:  #dbdbdb;
 
     --ff-header: 'Josefin Sans', sans-serif;
     --ff-body: 'Titillium Web', sans-serif;
@@ -59,7 +60,7 @@ img {
 }
 
 .content-body .highlight {
-    color: var(--green);
+    color: var(--golden);
 }
 
 /* SIDEBAR  */
@@ -74,7 +75,7 @@ img {
 }
 
 .sidebar-header a {
-    color: white;
+    color: var(--white);
     font-family: var(--ff-header);
     font-weight: 400;
     text-transform: uppercase;
@@ -124,7 +125,7 @@ img {
 
 #content {
     overflow: hidden;
-    color: white;
+    color: rgb(230, 230, 230);
     display: grid;
     grid-template-columns: minmax(200px, 300px) 1fr;
     padding: 3rem 2rem 3rem 2rem;
@@ -158,6 +159,24 @@ h3.home {
 
 .content-body .home {
     text-align: center;
+}
+
+.content-body a {
+    color: var(--salmon);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--golden);
+    padding-bottom: 2px;
+}
+
+.content-body a:hover {
+    color: var(--green);
+}
+
+blockquote {
+    border-left: 2px solid var(--green);
+    margin-left: 1rem;
+    padding-left: 2rem;
+    font-style: italic;
 }
 
 /* PAGE CONTENT CARDS */
@@ -229,6 +248,17 @@ h3.home {
 }
 .mobile-nav-logo img {
     max-width: 60px;
+    align-self: center;
+}
+
+.nav-toggle {
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    border-radius: .3rem;
+    padding: 0;
+    background-color: var(--green);
 }
 
 .mobile-nav-title {
@@ -242,6 +272,30 @@ h3.home {
 .footer-nav {
     text-align: center;
     justify-content: center;
+}
+
+.footer-nav ul li {
+    margin-top: 20px;
+}
+
+.mobile-social-links {
+    margin: auto;
+}
+
+.mobile-social-list {
+    margin: 0 auto 2rem auto;
+    padding-left: 0;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mobile-social-list a {
+    color: var(--salmon);
+}
+
+.mobile-social-list a:hover {
+    color: var(--green);
 }
 
 /* MEDIA QUERIES */
