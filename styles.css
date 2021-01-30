@@ -15,15 +15,6 @@
 
 /* BACKGROUND COVER */
 
-html {
-    /* TODO Add background color fallback */
-    background-image: url(/images/western.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
 .bkg-dark-md {
     background-color: rgba(0, 0, 0, 0.75);
 }
@@ -31,6 +22,11 @@ html {
 /* GENERAL STYLES */
 
 body {
+    background-image: url(/images/western.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
     overflow: hidden;
     font-family: var(--ff-body);
     font-size: var(--fs-body);
@@ -43,6 +39,7 @@ img {
 }
 
 .body-grid {
+    /* overflow: hidden; */
     display: grid;
     grid-template-columns: minmax(150px, 300px) minmax(350px, 1fr);
 }
@@ -144,7 +141,6 @@ h3.home {
 
 .content-body {
     justify-self: center;
-    min-width: 400px;
     max-width: 600px;
     height: 100vh;
     text-align: justify;
