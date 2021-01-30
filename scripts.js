@@ -1,6 +1,7 @@
 import { render } from "https://unpkg.com/lit-html?module";
 import { renderTitle, homeContentBody, projectsContentBody, blogContentBody, storageContentBody, aboutContentBody } from "./templates.js";
 
+const body = document.querySelector("body");
 const divSidebar = document.querySelector("#sidebar");
 const divContent = document.querySelector("#content");
 const divContentTitle = document.querySelector(".content-title");
@@ -26,12 +27,18 @@ function sidebarClick(evt) {
         const title = "";
         divContent.classList.remove("bkg-dark-md");
         page = "home";
+        if (body.classList.contains("bkg-western")) {
+            body.classList.toggle("bkg-western");
+        }
         displayContentTitle(title);
         displayContentBody(page);
     }
     // Display selected content for clicked sidebar link
     else if (classes.contains("nav-link")) {
         divContent.classList.add("bkg-dark-md");
+        if (!body.classList.contains("bkg-western")) {
+            body.classList.toggle("bkg-western");
+        }
         displayContentTitle(page);
         displayContentBody(page);
     }

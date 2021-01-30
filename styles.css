@@ -20,12 +20,16 @@
     background-color: rgba(0, 0, 0, 0.75);
 }
 
+.bkg-western {
+    background-image: url(/images/western.jpg);
+}
+
 /* GENERAL STYLES */
 
 body {
     height: 100vh;
     width: 100%;
-    background-image: url(/images/western.jpg);
+    background-image: url(/images/tribune.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
