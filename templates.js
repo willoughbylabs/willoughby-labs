@@ -20,7 +20,7 @@ export const projectsContentBody = html`
             <span class="strikethrough">interesting</span> <span class="highlight">fetch</span>
             today.</p>
     </section>
-</div>
+</div> <!-- end content-body-intro -->
 
 <div class="content-body-main">
     <section>
@@ -29,19 +29,19 @@ export const projectsContentBody = html`
                 <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe
                         src="https://giphy.com/embed/3VL0SRCEhQ63bqURDZ" width="100%" height="100%"
                         style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-            </div>
+            </div> <!-- card-img -->
             <div class="card-content">
                 <div class="card-content-header">
                     <h4><a href="http://mychi.willoughbylabs.com" target="_blank" rel="noopener noreferrer">myChi</a>
                     </h4>
-                </div>
+                </div> <!-- card-content-header -->
                 <div class="card-content-caption">
                     <h5>A Concise Data Dashboard</h5>
-                </div>
+                </div> <!-- card-content-caption -->
                 <a href="https://github.com/willoughbylabs/mychi" target="_blank" rel="noopener noreferrer"><i
                         class="fab fa-github"></i></a>
-            </div>
-        </div>
+            </div> <!-- card-content -->
+        </div> <!-- content-body-card -->
     </section>
 </div>
 `;
@@ -59,7 +59,7 @@ export const blogContentBody = html`
         <div style="width:100%;height:0;padding-bottom:56%;position:relative;">
             <iframe src="https://giphy.com/embed/3otPoUjeyRisIDxPhK" width="100%" height="100%"
                 style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-        </div>
+        </div> <!-- iframe -->
         <p>When Notion's API launches I will integrate
             a
             blog here but for now I copy my penning to <a href="https://blog.willoughbylabs.com/" target="_blank"
@@ -68,7 +68,7 @@ export const blogContentBody = html`
             <a href="https://twitter.com/willowbeehive" target="_blank" rel="noopener noreferrer">Twitter</a>.
         </p>
     </section>
-</div>
+</div> <!-- content-body-intro -->
 `;
 
 // STORAGE PAGE
@@ -84,7 +84,7 @@ export const storageContentBody = html`
             check back <span class="highlight">early and often</span>
             for the inevitable content.</p>
     </section>
-</div>
+</div> <!-- content-body-intro -->
 `;
 
 // ABOUT PAGE
@@ -95,7 +95,7 @@ export const aboutContentBody = html`
                 class="highlight">laboratory</span>!
         </p>
     </section>
-</div>
+</div> <!-- content-body-intro -->
 
 <div class="content-body-main">
     <section>
@@ -125,8 +125,8 @@ export const aboutContentBody = html`
         <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe
                 src="https://giphy.com/embed/l2YWgOm7cak7P4Cly" width="100%" height="100%" style="position:absolute"
                 frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-        </div>
+        </div> <!-- end iframe -->
         <p>So<span class="highlight"> let’s </span>prove Regina wrong. :)</p>
     </section>
-</div>
+</div> <!-- content-body-main -->
 `;
