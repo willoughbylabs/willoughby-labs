@@ -4,7 +4,7 @@ import { renderTitle, homeContentBody, projectsContentBody, blogContentBody, sto
 const divSidebar = document.querySelector("#sidebar");
 const divContent = document.querySelector("#content");
 const divContentTitle = document.querySelector(".content-title");
-const divContentBody = document.querySelector(".content-body");
+const divContentBody = document.querySelector(".content-body-content");
 const navToggle = document.querySelector(".nav-toggle");
 const footer = document.querySelector("#footer");
 const footerNav = document.querySelector(".footer-nav");

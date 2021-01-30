@@ -220,6 +220,10 @@ h3.home {
     .body-grid {
         grid-template-columns: 1fr;
     }
+
+    #content {
+        margin-bottom: 90px;
+    }
 }
 
 @media (min-width: 1025px) {

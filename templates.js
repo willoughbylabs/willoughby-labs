@@ -31,7 +31,7 @@ export const projectsContentBody = html`
                         style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
             </div>
             <div class="card-content">
-                <h4>myChi</h4>
+                <h4></a>myChi</h4>
                 <h5>A Concise Data Dashboard</h5>
             </div>
         </div>
@@ -45,18 +45,20 @@ export const blogContentBody = html`
     <section>
         <p>I'm not passionate about hot dogs, but sometimes I'm in the mood for them (especially when dragged through
             the
-            garden, Chicago style). Similarly, sometimes I'm in the mood for writing.</p>
-        <p>My favorite writing tool is
-            <a href="#">Notion</a>. It's <span class="highlight">fetch</span>.</p>
-        <div class="content-gif">
-            <iframe src="https://giphy.com/embed/3otPoUjeyRisIDxPhK" width="480" height="270" frameBorder="0"
-                class="giphy-embed" allowFullScreen></iframe>
+            garden Chicago style).</p>
+        <p> Similarly, sometimes I'm in the mood for writing. My favorite writing tool is <a
+                href="https://www.notion.so/" target="_blank" rel="noopener noreferrer">Notion</a>. It's <span
+                class="highlight">fetch</span>.</p>
+        <div style="width:100%;height:0;padding-bottom:56%;position:relative;">
+            <iframe src="https://giphy.com/embed/3otPoUjeyRisIDxPhK" width="100%" height="100%"
+                style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
         <p>When Notion's API launches I will integrate
             a
-            blog here but for now I copy my penning to<a href="#">Blogger</a>.</p>
+            blog here but for now I copy my penning to <a href="https://blog.willoughbylabs.com/" target="_blank"
+                rel="noopener noreferrer">Blogger</a>.</p>
         <p>For a <span class="highlight">TL;DR</span> version of my literature, I also compose on
-            <a href="#">Twitter</a>.
+            <a href="https://twitter.com/willowbeehive" target="_blank" rel="noopener noreferrer">Twitter</a>.
         </p>
     </section>
 </div>
@@ -101,18 +103,21 @@ export const aboutContentBody = html`
             format helps generate
             fact-based
             opinions.</p>
-        <p>"At dawn, when you have trouble getting out of bed, tell yourself: ‘I have to go to work—as a human being.
+        <blockquote>"At dawn, when you have trouble getting out of bed, tell yourself: ‘I have to go to work—as a human
+            being.
             What
             do I have to complain of, if I’m going to do what I was born for—the things I was brought into the world to
             do?
-            Or is this what I was created for? To huddle under the blankets and stay warm?"</p>
-        <p>-Marcus Aurelius</p>
+            Or is this what I was created for? To huddle under the blankets and stay warm?" -Marcus Aurelius
+        </blockquote>
         <p>I'm not a fan of winter, and I do really really like me some comfy covers, but Marcus Aurelius has a point -
             <span class="highlight">fetch</span> can’t happen
             without us making <span class="highlight">fetch</span> happen.</p>
-        <iframe src="https://giphy.com/embed/l2YWgOm7cak7P4Cly" width="480" height="270" frameBorder="0"
-            class="giphy-embed" allowFullScreen></iframe>
-        <p>Let’s prove Regina wrong.</p>
+        <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe
+                src="https://giphy.com/embed/l2YWgOm7cak7P4Cly" width="100%" height="100%" style="position:absolute"
+                frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+        <p>Let’s prove Regina wrong. :)</p>
     </section>
 </div>
 `;
