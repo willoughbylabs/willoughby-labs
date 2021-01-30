@@ -21,6 +21,7 @@ function sidebarClick(evt) {
     const tagName = evt.target.tagName;
     let page = evt.target.textContent;
     const classes = evt.target.classList;
+    console.log(evt.target);
     // Display home page.
     if (classes.contains("home")) {
         const title = "";
