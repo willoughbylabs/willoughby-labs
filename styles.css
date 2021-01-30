@@ -115,6 +115,61 @@ img {
     padding-right: 1rem;
 }
 
+/* PAGE CONTENT */
+
+#content {
+    min-width: 400px; 
+    color: white;
+    display: grid;
+    grid-template-columns: minmax(200px, 300px) 1fr;
+    place-items: center;
+    padding: 2rem;
+}
+
+h3.home {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 1rem;
+    border-radius: .3rem;
+    font-family: var(--ff-tagline);
+    font-size: var(--fs-tagline);
+    color: var(--green);
+}
+
+.content-title {
+    font-family: var(--ff-header);
+    font-size: var(--fs-heading-page);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--green);
+    width: 100%;
+}
+
+.content-body {
+    max-width: 600px;
+    height: 100vh;
+    text-align: justify;
+    overflow-y: auto;
+}
+
+/* PAGE CONTENT CARDS */
+
+.content-body-card {
+    max-width: 450px;
+    border: 1px solid #797979;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.card-img {
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    background-color:rgba(0, 0, 0, 0.90);
+    border-radius: 0 0 .5rem .5rem;
+    padding: 1rem;
+}
+
 /* MOBILE NAV */
 
 #footer { 
@@ -149,59 +204,6 @@ img {
 .footer-nav {
     text-align: center;
     justify-content: center;
-}
-
-/* PAGE CONTENT */
-
-#content {
-    min-width: 400px; 
-    color: white;
-    display: grid;
-    grid-template-columns: minmax(200px, 300px) 1fr;
-    place-items: center;
-    padding: 2rem;
-}
-
-h3.home {
-    background-color: rgba(0, 0, 0, 0.75);
-    padding: 1rem;
-    border-radius: .3rem;
-    font-family: var(--ff-tagline);
-    font-size: var(--fs-tagline);
-    color: var(--green);
-}
-
-.content-title {
-    font-family: var(--ff-header);
-    font-size: var(--fs-heading-page);
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--green);
-    width: 100%;
-}
-
-.content-body {
-    max-width: 600px;
-    text-align: justify;
-}
-
-/* PAGE CONTENT CARDS */
-
-.content-body-card {
-    max-width: 450px;
-    border: 1px solid #797979;
-    border-radius: 0 0 .5rem .5rem;
-}
-
-.card-img {
-    background-size: cover;
-    background-position: center;
-}
-
-.card-content {
-    background-color:rgba(0, 0, 0, 0.90);
-    border-radius: 0 0 .5rem .5rem;
-    padding: 1rem;
 }
 
 /* MEDIA QUERIES */
