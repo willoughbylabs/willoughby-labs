@@ -47,8 +47,8 @@ img {
 }
 
 .body-grid {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     display: grid;
     grid-template-columns: minmax(150px, 300px) minmax(350px, 1fr);
 }
