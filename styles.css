@@ -155,12 +155,10 @@ img {
 
 #content {
     min-width: 400px; 
-    height: 100%;
     color: white;
     display: grid;
     grid-template-columns: minmax(200px, 300px) 1fr;
     place-items: center;
-    margin-bottom: 200px;
     padding: 2rem;
 }
 
@@ -222,16 +220,11 @@ h3.home {
     #footer {
         display: none;
     }
-
-    #content {
-        margin-bottom: 100px;
-    }
 }
 
 @media (max-width: 800px) {
     #content {
         grid-template-columns: 1fr; 
-        margin-bottom: 250px;
     }
 }
 
