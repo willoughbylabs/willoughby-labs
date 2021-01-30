@@ -30,7 +30,7 @@ function sidebarClick(evt) {
         displayContentBody(page);
     }
     // Display selected content for clicked sidebar link
-    else if (tagName === "A" || tagName === "LI") {
+    else if (classes.contains("nav-link")) {
         divContent.classList.add("bkg-dark-md");
         displayContentTitle(page);
         displayContentBody(page);
