@@ -80,10 +80,14 @@ img {
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
+    transition-property: color;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
 }
 
 .sidebar-header a:hover {
     color: var(--golden);
+
 }
 
 .sidebar-nav, 
@@ -105,6 +109,9 @@ img {
 .mobile-nav ul a {
     color: var(--salmon);
     text-decoration: none;
+    transition-property: color;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
 }
 
 #sidebar ul a:hover,

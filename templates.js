@@ -64,7 +64,7 @@ export const blogContentBody = html`
             a
             blog here but for now I copy my penning to <a href="https://blog.willoughbylabs.com/" target="_blank"
                 rel="noopener noreferrer">Blogger</a>.</p>
-        <p>For a <span class="highlight">TL;DR</span> version of my literature, I also compose on
+        <p>For a <span class="highlight">TL;DR</span> version of my "literature", I also compose on
             <a href="https://twitter.com/willowbeehive" target="_blank" rel="noopener noreferrer">Twitter</a>.
         </p>
     </section>
