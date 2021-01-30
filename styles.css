@@ -49,7 +49,9 @@ img {
 }
 
 .display-none {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    /* display: none; */
 }
 
 /* TYPOGRAPHY */
@@ -194,7 +196,6 @@ blockquote {
 .content-body-card {
     margin: auto;
     max-width: 450px;
-    /* border: 1px solid #797979; */
     border-radius: 0 0 .5rem .5rem;
 }
 
@@ -283,6 +284,8 @@ blockquote {
 .footer-nav {
     text-align: center;
     justify-content: center;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
 }
 
 .mobile-nav-list li {
