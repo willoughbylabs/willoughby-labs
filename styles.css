@@ -29,7 +29,7 @@
 
 body {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-image: url(/images/tribune.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -237,6 +237,7 @@ blockquote {
 }
 
 .card-content-caption h5 {
+    padding: 0 .5rem;
     margin: 0;
     font-size: var(--fs-body);
     color: var(--green);
