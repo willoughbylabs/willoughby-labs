@@ -23,8 +23,9 @@
 .bkg-western {
     background-image: url(/images/western.jpg);
 }
-
+/* --- */
 /* GENERAL STYLES */
+/* --- */
 
 body {
     height: 100vh;
@@ -58,7 +59,9 @@ img {
     /* display: none; */
 }
 
+/* --- */
 /* TYPOGRAPHY */
+/* --- */
 
 .strikethrough {
     text-decoration: line-through;
@@ -69,7 +72,9 @@ img {
     color: var(--golden);
 }
 
+/* --- */
 /* SIDEBAR  */
+/* --- */
 
 #sidebar {
     background-color:rgba(0, 0, 0, 0.90);
@@ -137,7 +142,9 @@ img {
     padding-right: .5rem;
 }
 
+/* --- */
 /* PAGE CONTENT */
+/* --- */
 
 #content {
     overflow: hidden;
@@ -195,7 +202,9 @@ blockquote {
     font-style: italic;
 }
 
+/* --- */
 /* PAGE CONTENT CARDS */
+/* --- */
 
 .content-body-card {
     margin: auto;
@@ -209,10 +218,15 @@ blockquote {
 }
 
 .card-content {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color:rgba(0, 0, 0, 0.90);
     border-radius: 0 0 .5rem .5rem;
     border-top: .25rem solid var(--green);
     padding: 1rem 2rem;
+    gap: .5rem;
 }
 
 .card-content-header h4 {
@@ -227,10 +241,6 @@ blockquote {
     font-size: var(--fs-body);
     color: var(--green);
 }
-.card-content-caption {
-    display: flex;
-    justify-content: space-between;
-}
 
 .card-content a {
     font-size: var(--fs-body);
@@ -242,8 +252,9 @@ blockquote {
     color: var(--green);
 }
 
-
+/* --- */
 /* MOBILE NAV */
+/* --- */
 
 #footer { 
     background-color:black;
@@ -322,7 +333,9 @@ blockquote {
     padding: 0 20px;
 }
 
+/* --- */
 /* MEDIA QUERIES */
+/* --- */
 
 @media (max-width: 1024px) {
     #sidebar {

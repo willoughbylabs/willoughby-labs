@@ -37,9 +37,9 @@ export const projectsContentBody = html`
                 </div>
                 <div class="card-content-caption">
                     <h5>A Concise Data Dashboard</h5>
-                    <a href="https://github.com/willoughbylabs/mychi" target="_blank" rel="noopener noreferrer"><i
-                            class="fab fa-github"></i></a>
                 </div>
+                <a href="https://github.com/willoughbylabs/mychi" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-github"></i></a>
             </div>
         </div>
     </section>
@@ -52,7 +52,7 @@ export const blogContentBody = html`
     <section>
         <p>I'm not passionate about hot dogs, but sometimes I'm in the mood for them (especially when dragged through
             the
-            garden Chicago style).</p>
+            garden, Chicago style).</p>
         <p> Similarly, sometimes I'm in the mood for writing. My favorite writing tool is <a
                 href="https://www.notion.so/" target="_blank" rel="noopener noreferrer">Notion</a>. It's <span
                 class="highlight">fetch</span>.</p>
