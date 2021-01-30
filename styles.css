@@ -184,7 +184,7 @@ blockquote {
 .content-body-card {
     margin: auto;
     max-width: 450px;
-    border: 1px solid #797979;
+    /* border: 1px solid #797979; */
     border-radius: 0 0 .5rem .5rem;
 }
 
@@ -196,6 +196,7 @@ blockquote {
 .card-content {
     background-color:rgba(0, 0, 0, 0.90);
     border-radius: 0 0 .5rem .5rem;
+    border-top: .25rem solid var(--green);
     padding: 1rem 2rem;
 }
 
