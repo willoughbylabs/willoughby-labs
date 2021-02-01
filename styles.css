@@ -82,7 +82,7 @@ img {
 }
 
 .sidebar-logo {
-    max-width: 75px;
+    max-width: 60px;
 }
 
 .sidebar-header a {
@@ -275,14 +275,14 @@ blockquote {
     display: flex;
 }
 .mobile-nav-logo img {
-    max-width: 60px;
+    max-height: 30px;
     align-self: center;
 }
 
 .nav-toggle {
     align-self: center;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border: 0;
     border-radius: .3rem;
     padding: 0;
