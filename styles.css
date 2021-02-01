@@ -8,7 +8,7 @@
     --ff-body: 'Titillium Web', sans-serif;
     --ff-tagline: 'Satisfy', cursive;
 
-    --fs-body: 1.1rem;
+    --fs-body: 1rem;
     --fs-navlink: 1.2rem;
     --fs-tagline: 3rem;
     --fs-heading-page: 1.5rem;
@@ -151,7 +151,7 @@ img {
     color: rgb(230, 230, 230);
     display: grid;
     grid-template-columns: minmax(200px, 300px) 1fr;
-    padding: 3rem 2rem 3rem 2rem;
+    padding: 3rem .75rem 3rem .75rem;
 }
 
 h3.home {
